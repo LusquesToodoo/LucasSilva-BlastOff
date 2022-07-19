@@ -1,0 +1,20 @@
+Nome: Lucas Carlos da Silva
+Curso: Git
+
+São Paulo, 18 julho de 2022.
+Segunda-feira
+============================================================================
+Aula 2
+============================================================================
+
+pwc - mostra a árvore de diretórios até chegar na pasta atual.
+
+ls - lista os arquivos e diretórios presentes na pasta atual.
+
+mkdir - make diretory; Cria um novo diretório.
+
+touch - cria um arquivo. (Também pode ser usado para criar arquivos dentro de diretórios)
+
+cd- entra no diretório selecionado
+
+clear - limpa o terminal

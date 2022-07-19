@@ -1,0 +1,18 @@
+Nome: Lucas Carlos da Silva
+Curso: Git
+
+São Paulo, 18 julho de 2022.
+Segunda-feira
+============================================================================
+Aula 3
+============================================================================
+
+ls -a - mostra todos os diretórios inclusive os ocultos.
+
+git add ./* - adiciona arquivos em um container
+
+git commit - adiciona elementos alterados no repositório local.
+
+git log - mostra linha do tempo de commits do seu repositório local/virtual.
+
+git log --oneline - mostra a linha do tempo do de uma forma diferente.

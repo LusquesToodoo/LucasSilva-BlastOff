@@ -1,0 +1,113 @@
+Nome: Lucas Carlos da Silva
+Curso: Git
+
+São Paulo, 18 julho de 2022.
+Segunda-feira
+============================================================================
+Aula 1
+============================================================================
+
+Git - Sistema de controle de versões.
+---
+Basicamente, seu trabalho é documentar e armazenar todas as alterações
+feitas paralelamente no decorrer do projeto, para que no final todas 
+possam se atribuir num único documento.
+_____________
+
+Github - Uma pseudo rede social onde é possível armazenar seu código.
+---
+Além de armazenar o código, é possível compartilhar seus projetos e interagir
+com projetos de terceiros, e também que terceiros interajam com seu código desde que
+haja a permissão adequada.
+Também existe uma espécie de fórum que faz possível tirar dúvidas sobre o código dentro
+do próprio github.
+_____________
+
+Commit - Descrições do que foi modificado no código.
+
+============================================================================
+Aula 2
+============================================================================
+
+pwc - mostra a árvore de diretórios até chegar na pasta atual.
+
+ls - lista os arquivos e diretórios presentes na pasta atual.
+
+mkdir - make diretory; Cria um novo diretório.
+
+touch - cria um arquivo. (Também pode ser usado para criar arquivos dentro de diretórios)
+
+cd- entra no diretório selecionado
+
+clear - limpa o terminal
+
+============================================================================
+Aula 3
+============================================================================
+
+ls -a - mostra todos os diretórios inclusive os ocultos.
+
+git add ./* - adiciona arquivos em um container
+
+git commit - adiciona elementos alterados no repositório local.
+
+git log - mostra linha do tempo de commits do seu repositório local/virtual.
+
+git log --oneline - mostra a linha do tempo do de uma forma diferente.
+
+============================================================================
+Aula 4
+============================================================================
+Objetivo: Rastrear mudaças, desfazer alterações e recuperar versões anteriores.
+
+master - ramo principal.
+
+Head - ponto onde o seu projeto se encontra no grafo de commits, sendo esse
+sempre o último commit.
+
+git log --graph - mostra os commit num formato mais próximo de grafos, com inteface
+contendo vértices e arestas.
+git log --graph --oneline - mistura as duas formas de mostrar a timeline do git,
+mostrando o grafo, mas num formato onde não existe arestas.
+
+git commit -am 'comentário' - o "-am" é um método de commit que torna o "git add ." d
+dispensável, pois ele forma o container ao mesmo tempo que commita no repositório local.
+
+O git não cria cópias do projeto, por questão de lógistica com os dados, pois isso
+ocuparia muito espaço na memória. O git rastreia as alterações do projeto, armazenando tão somente
+as mudanças feitas nos arquivos.
+
+No container temos apenas a versão atual do projeto.
+
+git branch - identifica o ramo que o projeto se encontra.
+
+git diff - mostra informações relacionada a mudanças no código.
+
+Como recuperar uma determinada versão do projeto
+---
+Todos os commit feitos, ficam na linha do tempo. Para recuperar uma versão do nosso código, basta apontar
+o HEAD para um container de uma versão anterior ao qual deseja recuperar.
+
+git checkout 'rash do commit'
+_____________
+
+Como desfazer alterações
+---
+
+git checkout 'nome do arquivo que deseja resetar'
+Dessa forma, ele irá resetar para o arquivo presenta no HEAD.
+
+git reset HEAD
+usado para quando as alterações já estão no container, ela retorna o conteúdo
+do HEAD dentro do container e remove as alterações.
+
+_____________
+
+Como apagar um commit
+---
+git reset --hard 'rash do commit'
+Remove o commit da linha do tempo e apaga as alterações da HEAD.
+_____________
+
+Ou seja, git reset head se move dentro do grafo e o git reset --hard HEAD atualiza o container
+para o HEAD para e apaga o commit sugerido.

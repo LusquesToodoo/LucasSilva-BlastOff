@@ -1,0 +1,26 @@
+Nome: Lucas Carlos da Silva
+Curso: Git
+
+São Paulo, 18 julho de 2022.
+Segunda-feira
+============================================================================
+Aula 1
+============================================================================
+
+Git - Sistema de controle de versões.
+---
+Basicamente, seu trabalho é documentar e armazenar todas as alterações
+feitas paralelamente no decorrer do projeto, para que no final todas 
+possam se atribuir num único documento.
+_____________
+
+Github - Uma pseudo rede social onde é possível armazenar seu código.
+---
+Além de armazenar o código, é possível compartilhar seus projetos e interagir
+com projetos de terceiros, e também que terceiros interajam com seu código desde que
+haja a permissão adequada.
+Também existe uma espécie de fórum que faz possível tirar dúvidas sobre o código dentro
+do próprio github.
+_____________
+
+Commit - Descrições do que foi modificado no código.
