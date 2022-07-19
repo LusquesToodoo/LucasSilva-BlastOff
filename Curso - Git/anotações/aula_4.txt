@@ -1,12 +1,14 @@
-Nome: Lucas Carlos da Silva
-Curso: Git
-
 São Paulo, 18 julho de 2022.
 Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Rastrear mudaças, desfazer alterações e recuperar versões anteriores.
+keywords: Conceitos do git
+
 ============================================================================
 Aula 4
 ============================================================================
-Objetivo: Rastrear mudaças, desfazer alterações e recuperar versões anteriores.
 
 master - ramo principal.
 

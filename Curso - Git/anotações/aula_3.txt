@@ -1,8 +1,11 @@
-Nome: Lucas Carlos da Silva
-Curso: Git
-
 São Paulo, 18 julho de 2022.
 Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Demonstrar alguns comandos do git.
+keywords: Comandos git
+
 ============================================================================
 Aula 3
 ============================================================================
