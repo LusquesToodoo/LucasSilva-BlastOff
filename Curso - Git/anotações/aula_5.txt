@@ -1,0 +1,30 @@
+São Paulo, 19 julho de 2022.
+Terça-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Aprender a manipular o git em relação as ramificações e como juntar todo o código num
+único arquivo.
+keywords: como fazer branch e merge
+
+============================================================================
+Aula 5
+============================================================================
+
+Master - ramo/branch principal.
+
+git checkout -b 'nome da branch': cria uma nova ramificação
+
+Ao criar uma nova branch, todos os commits feitos a partir deste momento serão
+atríbuidos a esse novo ramo.
+No momento de criação de um ramo, o head apontará tanto para a master quanto para o ramo em questão,
+pois se não houver alterações entre os arquivos os dois serão equivalentes em relação a informação que comportam.
+
+Pense no nova branch como um instância, ela irá herdar tudo do objeto a qual se refere (master), mas se não houver
+nenhuma alteração ou novas características atríbuidas a ela, então ela será equivalente ao objeto original.
+
+git log --oneline --graph --all: o comando '--all' faz com que o terminal mostre todo o grado, caso não coloque essa
+instrução, somente será mostrando os commits da branch atual.
+
+Os conflitos ocorrem quando em branchs diferentes a mesma linha sofre duas alterações diferentes, para solucionar basta escolher
+uma das alteraçõoes feitas ou manter as duas. Após solucionado o problema do conflito, se faz necessário commitar novamente.

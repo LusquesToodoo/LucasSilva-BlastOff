@@ -1,0 +1,19 @@
+São Paulo, 19 julho de 2022.
+Terça-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Como fazer um projeto local e envia-lo para o github.
+keywords: Como mandar um repositório apenas local para o git?
+
+============================================================================
+Aula 6
+============================================================================
+
+git remote: verifica se existe um repositório remoto.
+
+git remote add origin https://github.com/lusques/git.git: Conecta o repositório local
+com o repositório do git.
+
+git push -u origin master: Sobe os arquivos do head de origin para o repositório remoto cadastrado
+com o link.

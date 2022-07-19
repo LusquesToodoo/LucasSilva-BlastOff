@@ -1,0 +1,13 @@
+São Paulo, 19 julho de 2022.
+Terça-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Como clonar repositório do git para pasta local.
+keywords: Como pegar um repositório no github/gitlab?
+
+============================================================================
+Aula 7
+============================================================================
+
+git clone 'link repositório': Usado para pegar os arquivos de um repositório remotoe recria-lo no seu repositório local.
