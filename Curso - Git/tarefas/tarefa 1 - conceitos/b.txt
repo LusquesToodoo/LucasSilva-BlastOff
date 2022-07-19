@@ -1,1 +1,2 @@
 Essa linha foi adicionada na branch main
+Essa linha foi adicionada na branch conflito
