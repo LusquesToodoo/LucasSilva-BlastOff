@@ -1,0 +1,30 @@
+São Paulo, 19 julho de 2022.
+Terça-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Alterar o arquivo no git e obter essas alterações no repositório local.
+keywords: Como sincronizar o repositório local com o repositório remoto?
+
+============================================================================
+Aula 9
+============================================================================
+
+git pull: Atualiza o head do repositório local usando o head do erepositório remotocomo referência.
+
+============================================================================
+Aula 10
+============================================================================
+
+Objetivo: Simular dois repositórios locais atualizando o mesmo código.
+
+git fetch: equivale ao git pull, porém sem fazer o merge com head, ele apenas
+faz download das alterações no ambiente local e disponibiliza para análise.
+
+[
+  git fetch
+  git remote 
+  git checkout origin('repositório remoto')
+]
+
+git config --global core.editor code: Esse comando define o vscode como editor padrão do git.
