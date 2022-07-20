@@ -32,4 +32,4 @@ Tag de image:
 !['alt']('src')
 _____________
 Tag âncora:
-['alt']('href')
+['texto do link']('href')
