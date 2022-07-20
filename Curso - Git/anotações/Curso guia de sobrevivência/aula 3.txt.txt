@@ -1,0 +1,16 @@
+São Paulo, 20 julho de 2022.
+Quarta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git para sobrevivência
+Objetivo: Aprender como o rebase funciona
+
+============================================================================
+Aula 3
+============================================================================
+
+branch: uma etiquera que aponta para um commit.
+
+git rebase master: Ao que parece, ele apenas atualiza no grafo a coordenada da feature,
+combinando todos os commits dentro da branch feature e depois alinhando ela no histório
+com um novo commit que apontará para a master.
