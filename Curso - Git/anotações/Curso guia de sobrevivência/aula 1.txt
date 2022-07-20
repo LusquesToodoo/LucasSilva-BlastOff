@@ -2,7 +2,7 @@ São Paulo, 20 julho de 2022.
 Quarta-feira
 
 Nome: Lucas Carlos da Silva
-Curso: Git
+Curso: Git para sobrevivência
 Objetivo: Como funciona o git
 keywords:
 

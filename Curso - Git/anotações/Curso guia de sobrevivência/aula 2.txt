@@ -1,0 +1,20 @@
+São Paulo, 20 julho de 2022.
+Quarta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git para sobrevivência
+Objetivo: Como funciona o merge
+
+============================================================================
+Aula 2
+============================================================================
+
+Fast-foward: Resumidamente, é como de o git tivesse um ponteiro armazenando o endereço
+da main/master, e ao dar o comando git merge 'feature', o ponteiro atualizasse o endereço
+da master substituíndo ele pelo endereço da feature.
+
+Recursive Strategy: Basicamente, entre a branch master e a branch feature, a direfença é tão
+de código grande que o git decide unir os dois códigos num só e gerar um novo commit. Ele faz
+isso com auxilio dos blobs, que listam as diferenças de ambas as branchs, no momento de gerar uma nova. 
+Ele cria um novo commit, pois ambos os códigos tem suas particularidades que se destoam, o que torna
+impossível apenas mudar o endereço da master, como no caso do fast-foward.
