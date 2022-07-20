@@ -15,3 +15,19 @@ O que é o readme?
 O readme é um dos principari arquivos do projeto, sua função é ser um arquivo de texto onde
 será documentado o projeto em questão. No github, ele é usado como cartão de visita e divulgação
 do projeto, escrito na línguagem markdown.
+
+Comandos markdown
+---
+
+Tag de título:
+# -> h1
+## -> h2
+### -> h3
+#### -> h4
+##### -> h5
+###### -> h6
+_____________
+
+Tag de image:
+
+!['alt']('src')
