@@ -1,4 +1,6 @@
+![BlastOff]()
 # LucasSilva-BlastOff
+
 #### Repositório referente ao curso BlastOff organizado e minsitrado pela equipe da Toodoo.
 ## Curso - GIT
 ### Introduzindo uma imagem no readme a partir do git
