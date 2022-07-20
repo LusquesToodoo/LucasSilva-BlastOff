@@ -1,0 +1,44 @@
+São Paulo, 20 julho de 2022.
+Quarta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Como funciona o git
+keywords:
+
+============================================================================
+Aula 1
+============================================================================
+
+git commit -m: Gera um 'pacote fechado' com as informações atualizadas do código.
+Um pacote de alterações.
+
+git add -> (separa as alterações e as mantém prontas para serem commitadas)
+git commit -> (Pega as informações separadas e as inclúi num container (HEAD).
+Essa ação também fica marcada no grafo da linha do tempo do git, podendo ser
+acessado com o comando git log [--oneline; --graph; -- all;])
+_____________
+
+tree .git: lista a árvore do diretório.
+
+Blobs
+---
+Objeto gerado referente a cada linha alterada, esse documento é armazenado na árvoreda pasta .git,
+cada blob tem um rash próprio.
+_____________
+
+Tree -> Foto do estado atual do projeto/Snapshot.
+
+
+Os commit usam os blobs para se referênciarem a cada nova vértice do grafo, quando se commita duas vezes
+um código com atualizações diferentes, o último commit irá manter o blob do penmúltimo, mantendo assim a
+'linhado tempo', ou seja, quando aquele código foi alterado, sem necessáriamente ter que fazer uma cópia
+de arquivos paralela, o que auxilia a otimizar espaço útil do disco.
+
+Não sei se ao commitar um repositório ele mantém os blobs de como era inicialmente ou se  apenas mantém as
+alterações e os blobs são armazenados no commit anterior, sendo usado somente no momento de um git checkout
+ao selecionar o rash que se deseja, mas imagino que seja algo por esse lado.
+Caso ele mantenha o blob em seu predecessor, nada impede que ele de alguma forma se mantenha apontando para
+o ele, junto aos blobs de seu próprio repositório.
+
+(Pesquisar: Como funcionam os blobs)
