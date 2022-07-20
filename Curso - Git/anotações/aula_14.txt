@@ -1,0 +1,32 @@
+São Paulo, 20 julho de 2022.
+Quarta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Gerenciar projetos com Kanban
+keywords: como planejar projetos com Kanban
+
+============================================================================
+Aula 14
+============================================================================
+
+kanban é um sistema visual de gerenciamento de projetos.
+O Kanban significa 'cartão/sinalização'. Seu funcionamento é muito simples,
+o conteito de trata de dividir as partes do projeto em três partes/colunas:
+
+To do
+---
+Usado para tarefas que deverão ser feitas.
+Usado para tarefas que deverão ser feitas.
+_____________
+In progress
+---
+Usado para tarefas que estão sendo executadas.
+_____________
+
+Done
+---
+Usado para tarefas concluídas.
+_____________
+
+Nas notas do Kanban do github, é possível edita-las com markdown.
