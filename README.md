@@ -9,3 +9,6 @@
 
 ### Acesse meu linkedin a partir do link:
 [Linkedin](https://www.linkedin.com/in/lucas-carlos-76aba0165/)
+
+### Usando selos dinâmicos - aula 15
+![GitHub repo size](https://img.shields.io/github/repo-size/lusquestoodoo/LucasSilva-BlastOff?style=for-the-badge)

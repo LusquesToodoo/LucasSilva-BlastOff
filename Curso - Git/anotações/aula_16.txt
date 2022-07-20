@@ -1,0 +1,24 @@
+São Paulo, 20 julho de 2022.
+Quarta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Aprender mais sobre selos dinâmicos de metadados e shields.io
+keywords: como funcionam os selos dinamicos do github?
+
+============================================================================
+Aula 16
+============================================================================
+
+O que são selos de metadados?
+---
+_____________
+Como os selos funcionam?
+---
+
+Os selos trabalham com informações do seu perfil, sendo que alguns deles
+também depende de serviços externos para funcionar, ou seja, dependendo
+do conteúdo que você tiverm alguns selos podem não funcionar.
+_____________
+
+link para acesso a documentação dos selos: https://shields.io/
