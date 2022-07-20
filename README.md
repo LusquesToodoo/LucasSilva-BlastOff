@@ -1,4 +1,4 @@
-![BlastOff]()
+![BlastOff](https://github.com/LusquesToodoo/LucasSilva-BlastOff/blob/main/Curso%20-%20Git/tarefas/tarefa%202%20-%20readme/capa.jpg)
 # LucasSilva-BlastOff
 
 #### Repositório referente ao curso BlastOff organizado e minsitrado pela equipe da Toodoo.
