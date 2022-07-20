@@ -13,4 +13,4 @@
 ### Usando selos dinâmicos - aula 15
 ![GitHub repo size](https://img.shields.io/github/repo-size/lusquestoodoo/LucasSilva-BlastOff?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/lusquestoodoo/LucasSilva-BlastOff?style=for-the-badge)
-![BlastOff](![GitHub](https://img.shields.io/github/license/lusquestoodoo/LucasSilva-BlastOff?color=%230d076d?style=for-the-badge)
+![BlastOff](https://img.shields.io/badge/Toodoo-BlastOff-%230d076d?style=for-the-badge)
