@@ -1,0 +1,28 @@
+São Paulo, 20 julho de 2022.
+Quarta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Aprender como fazer um fork e um pull request
+keywords: o que é fork e pull request?
+
+============================================================================
+Aula 15
+============================================================================
+
+O que é um fork
+---
+
+O fork é um clone de um repositório feito diretamente no seu github.
+Ao fazer um fork, podemos fazer qualquer tipo de alteração no código
+do projeto clonado sem nenhum tipo de interferência com o projeto original.
+Caso deseje subir suas alterações para o projeto original, será necessário
+fazer um Pull Request (o que irá sugerir uma alteração no projeto original).
+_____________
+
+Pull Request
+---
+
+Faz uma indicação de algo que pode ser atualizado no código original, como
+explicado acima.
+_____________
