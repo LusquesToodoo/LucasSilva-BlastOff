@@ -1,0 +1,17 @@
+São Paulo, 20 julho de 2022.
+Quarta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git
+Objetivo: Aprender a personalizar o readme
+keywords: Como customizar o readme
+
+============================================================================
+Aula 12
+============================================================================
+
+O que é o readme?
+---
+O readme é um dos principari arquivos do projeto, sua função é ser um arquivo de texto onde
+será documentado o projeto em questão. No github, ele é usado como cartão de visita e divulgação
+do projeto, escrito na línguagem markdown.
