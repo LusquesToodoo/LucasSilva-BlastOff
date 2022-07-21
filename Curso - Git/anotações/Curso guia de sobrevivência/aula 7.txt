@@ -3,12 +3,17 @@ Quinta-feira
 
 Nome: Lucas Carlos da Silva
 Curso: Git para sobrevivência
+<<<<<<< HEAD
 Objetivo: Aprender a lidar com conflitos de merge
+=======
+Objetivo: Melhorar o histórico de squash e fixup
+>>>>>>> 8fbea8773842b198445c598dee4816b1b3375fcc
 
 ============================================================================
 Aula 7
 ============================================================================
 
+<<<<<<< HEAD
 git pull -> git fetch + git merte
 ---
 
@@ -36,3 +41,20 @@ merge: usado para atualizar a master com as branchs que você for colocar nela.
 
 rebase: Executa o mesmo processo do merge, mas no final dá um rebase no diretório. 
 Usado para manter o histórico mais linear. ()reescrever história dos commits).
+=======
+A vantagem de ter um histórico organizado é que ao bater o olho no log, se torna possível localizar
+onde cada funcionalidade foi adicionada, auxiliando assim a resolução e correção de bugs.
+
+git rebase -i master: Dá mais opções de manipular o histórico de commits, como por exemplo, executar uma
+squash para unir todos os commits em um só.
+
+esc :wq -> comando para sair do VIM.
+
+Como ressincronizar o histórico:
+git push --force: MAS NÃO É INDICADO, Pois ele irá ignorar tudo que estiver no repositório remoto editar e 
+subir o conteúdo do seu repositório local, isso implica em poder perder algum commit feito por algum outro dev
+que não está na sua máquina.
+
+git push --force -width-lease: Ao fazer um rebase, deve-se usar esse comando. O intuito dele é fazer com que
+outros usuários daquele repositório precisem dar pull no repositório remoto antes de executar o comando push.
+>>>>>>> 8fbea8773842b198445c598dee4816b1b3375fcc
