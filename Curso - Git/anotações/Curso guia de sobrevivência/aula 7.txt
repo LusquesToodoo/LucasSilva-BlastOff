@@ -1,0 +1,38 @@
+São Paulo, 21 julho de 2022.
+Quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git para sobrevivência
+Objetivo: Aprender a lidar com conflitos de merge
+
+============================================================================
+Aula 7
+============================================================================
+
+git pull -> git fetch + git merte
+---
+
+O git pull faz um git fetch, baixando todas as atualizações do repositório remoto e 
+armazenando em um repositório paralelo ao que é usado pelo usuário, logo após ele executa
+o comando git merge entre ambos os repositórios, atualizando as alterações entre o repositório
+remoto e a branch local.
+'tualiza a branch remota, e logo após atualiza a branch local em função da remota.
+_____________
+git pull --rebase
+---
+
+Executa o processo de git pull e logo após faz um rebase no grafo do repositório remoto/local.
+PS: rebase -> atualiza a localização da branch em relação ao grafo, colocando ela num ponto
+masi atual da timeline.
+_____________
+
+git merge --continue: Abre o terminal VIM para alterar a mensagem de merge.
+
+git rerere -> guarda as resoluções do rebase. <-(Pesquisar)
+
+Quando usar cada um?
+---
+merge: usado para atualizar a master com as branchs que você for colocar nela.
+
+rebase: Executa o mesmo processo do merge, mas no final dá um rebase no diretório. 
+Usado para manter o histórico mais linear. ()reescrever história dos commits).

@@ -17,5 +17,3 @@ ex:
   $ git revert 1
   commit 3 -> ''
 ]
-
-CATAPIMBAS
