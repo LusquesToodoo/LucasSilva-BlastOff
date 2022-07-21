@@ -39,3 +39,5 @@ git stash list: mostra os blobs que estão em stash.
 git stach aply 'nome do blob': Restara o código que está em stash.
 
 git blame: Mostra um feedback de quem fez qual parte do código.
+
+git commit
