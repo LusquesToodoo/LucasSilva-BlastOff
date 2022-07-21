@@ -1,0 +1,26 @@
+São Paulo, 21 julho de 2022.
+Quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git para sobrevivência
+Objetivo: Melhorar o histórico de squash e fixup
+
+============================================================================
+Aula 7
+============================================================================
+
+A vantagem de ter um histórico organizado é que ao bater o olho no log, se torna possível localizar
+onde cada funcionalidade foi adicionada, auxiliando assim a resolução e correção de bugs.
+
+git rebase -i master: Dá mais opções de manipular o histórico de commits, como por exemplo, executar uma
+squash para unir todos os commits em um só.
+
+esc :wq -> comando para sair do VIM.
+
+Como ressincronizar o histórico:
+git push --force: MAS NÃO É INDICADO, Pois ele irá ignorar tudo que estiver no repositório remoto editar e 
+subir o conteúdo do seu repositório local, isso implica em poder perder algum commit feito por algum outro dev
+que não está na sua máquina.
+
+git push --force -width-lease: Ao fazer um rebase, deve-se usar esse comando. O intuito dele é fazer com que
+outros usuários daquele repositório precisem dar pull no repositório remoto antes de executar o comando push.
