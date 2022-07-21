@@ -18,7 +18,8 @@ no terminal do git.
 hub create 'nome do repositório': Cria um repositório no github registrado no terminal.
 _____________
 
-Issues---
+Issues
+---
 
 Trata-se de uma aba do github onde usuários das libs usam para comentar problemas que passaram com
 a biblioteca, o que ajuda a outros usuários posteriores que possam vir a passar pelo mesmo problema.

@@ -1,0 +1,17 @@
+São Paulo, 21 julho de 2022.
+Quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git para sobrevivência
+Objetivo: Aprender a editar o último commit feito
+
+============================================================================
+Aula 5
+============================================================================
+
+git commit --amend: esse comando tem como intuito reescrever a descrição do último
+commit feito, reescreve a mensagem.
+
+git reset 'hash': Pode ser usado para navegar entre as branchs, usado também para
+reescrever a linha do tempo da branch, mas não sei se ao commitar ele sobreescreve
+a linha do tempo anterior ou apenas cria um ramo paralelo.
