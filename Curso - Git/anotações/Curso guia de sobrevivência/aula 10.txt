@@ -1,0 +1,41 @@
+São Paulo, 21 julho de 2022.
+Quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git para sobrevivência
+Objetivo: Os poderes do git reflog
+============================================================================
+Aula 10
+============================================================================
+
+Operaçoes destrutivas
+---
+[
+Git rebase,
+Git reset --hard
+]
+
+Tratam-se de operaçõesque podem ocasionar em possíveis percas de linhas de código
+se forem usadas de forma imprudente.
+_____________
+
+git reflog: Esse comando guarda um histórico das alterações feitas no código
+permitindo que seja possível voltar no exato ponto onde um commit foi feito.
+O git reflog somente mostra o histórico e a coordenada (hash) de onde está
+no grafo o commit que se deseja voltar, para ir até o commit se faz necessário
+o uso do comando git reset 'hash'.
+
+git restore: Usado para restaurar alterações.
+
+============================================================================
+Dicas Gerais
+============================================================================
+
+git stash: Permite mudar de branch sem necessáriamente ter que fazer um commit
+antes, caso tenha alterações não commitadas.
+
+git stash list: mostra os blobs que estão em stash.
+
+git stach aply 'nome do blob': Restara o código que está em stash.
+
+git blame: Mostra um feedback de quem fez qual parte do código.

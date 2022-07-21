@@ -8,7 +8,7 @@ Objetivo: Fluxo de trabalho com git
 Aula 9
 ============================================================================
 
-Modelo centralizado
+Model Centralized
 ---
 Esse é um modelo de tarbalho onde uma pequena equipe de pessoas (2~5 pessoas)
 trabalham usando uma mesma branch no git.
