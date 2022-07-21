@@ -1,0 +1,31 @@
+São Paulo, 21 julho de 2022.
+Quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git para sobrevivência
+Objetivo: Fluxo de trabalho com git
+============================================================================
+Aula 9
+============================================================================
+
+Modelo centralizado
+---
+Esse é um modelo de tarbalho onde uma pequena equipe de pessoas (2~5 pessoas)
+trabalham usando uma mesma branch no git.
+_____________
+
+Feature branch
+---
+Modelo de trabalho onde, ao invés de todos os usuários compartilharem uma mesma
+branch, cada um desenvolve em um ramo paralelo a master e, no final do processo
+de desenvolvimento, faz-se o processo de merge com a branch master.
+_____________
+
+Git flow
+---
+Cria um fluxo específico para cada etapa do processo de desenvolvimento, onde
+cara um terá uam branch específica para ser tratado.
+_____________
+
+git flor <-(pesquisar)
+git e github: estratégias de ramificação, conflitos e pull request <-(curso Alura)
