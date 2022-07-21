@@ -1,0 +1,28 @@
+São Paulo, 20 julho de 2022.
+Quarta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git para sobrevivência
+Objetivo: Issues, Pull Request, Templates e features legais do github
+
+============================================================================
+Aula 4
+============================================================================
+
+HUB
+---
+
+Ferramenta que torna possível rodar várias funcionalidades da interface do github diretamente
+no terminal do git.
+
+hub create 'nome do repositório': Cria um repositório no github registrado no terminal.
+_____________
+
+Issues---
+
+Trata-se de uma aba do github onde usuários das libs usam para comentar problemas que passaram com
+a biblioteca, o que ajuda a outros usuários posteriores que possam vir a passar pelo mesmo problema.
+
+Ao pesquisar no github, pode-se escrever o que se deseja pesquisar, como por exemplo:
+"<p> hello world! </p>"
+Assim, o github irá mostrar resultado de repositórios que correspondem ao texto dentro das aspas.
