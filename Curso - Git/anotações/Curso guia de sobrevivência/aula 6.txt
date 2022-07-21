@@ -1,0 +1,19 @@
+São Paulo, 21 julho de 2022.
+Quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Git para sobrevivência
+Objetivo: Como resolver um big que já está na master
+
+============================================================================
+Aula 6
+============================================================================
+
+git revert: Pega tudo o que foi alterado num commit, e gera um novo commit removendo essas alterações
+ex:
+[
+  commit 0 -> ''
+  commit 1 -> 'string'
+  $ git revert 1
+  commit 3 -> ''
+]
