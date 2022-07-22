@@ -46,4 +46,3 @@ _____________
   Para desenvolvedores de software, algumas das metodologias ágeis
   mais conhecidas são:
 ]
-

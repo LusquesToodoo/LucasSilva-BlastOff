@@ -1,0 +1,12 @@
+São Paulo, 25 julho de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Framework Scrum
+Objetivo: Definition os done
+============================================================================
+Aula 16
+============================================================================
+
+Definition of done (DoD) trata-se do consenso do que é necessário para que a
+tarefa esteja terminada, para que esteja pronta.

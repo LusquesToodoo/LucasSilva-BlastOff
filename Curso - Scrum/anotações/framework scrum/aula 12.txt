@@ -1,0 +1,20 @@
+São Paulo, 25 julho de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Framework Scrum
+Objetivo: Sistema puxado
+============================================================================
+Aula 12
+============================================================================
+
+Produção empurrada:
+Na produção empurrada, um produto é fabricado e armazenado esperando que um
+cliente compre ele, tornando necessário um estoque.
+
+Produção puxada:
+Na produção puxada, o cliente faz uma requisição para o produtor que faz a mercancia
+sob demanda, cortanto assim a necessidade de estoque.
+Ou seja, sistema de trabalho sob demanda.
+
+Sistema LIN <-(Pesquisar)

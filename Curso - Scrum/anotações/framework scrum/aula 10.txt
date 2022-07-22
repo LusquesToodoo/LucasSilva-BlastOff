@@ -1,0 +1,53 @@
+São Paulo, 25 julho de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Framework Scrum
+Objetivo: Retrospectiva
+============================================================================
+Aula 10
+============================================================================
+
+Um momento dedicado a reunir o time para refletir sobre a sprint passada.
+
+- O que foi bem?
+
+- O que deve ser melhorado?
+
+- Ações?
+
+No review, é levantado pontos como pontos a melhorar, pontos a manter e como
+solucionar os problemar levantados pelo time, quais ações deveriam ser tomadas.
+
+Ciclo curto de melhoria contínua:
+
+(...) -> Construir o produto -> interação -> Entregar o incremento do produto ->
+configurar o cenário -> coletar informações -> gerar ideias -> decidir o que fazer ->
+encerrar a retrospectiva -> incorporar as melhorias -> (...)
+
+Ciclo do PDCA
+---
+Plan (Planejamento):
+[
+  Identifica o problema
+  Descubra onde e porquê ele começa
+]
+
+Do (Execução):
+[
+  Envolve as pessoas e executa o que foi planejado.
+]
+
+Check (Acompanhamento):
+[
+  Analise se tudo foi executado e se o resultado esperado realmente aconteceu.
+]
+
+Act (Ação):
+[
+  Deu certo?
+    Padronize o processo, compartilhe o aprendizado.
+  
+  Não deu certo?
+    Reflita o que pode ser mudado e compartilhe o aprendizado.
+]

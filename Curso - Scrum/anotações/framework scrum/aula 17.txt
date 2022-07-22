@@ -1,0 +1,17 @@
+São Paulo, 25 julho de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Framework Scrum
+Objetivo: Gráfico BurnDown
+============================================================================
+Aula 17
+============================================================================
+
+Um gráfico onde é traçada uma linha num plano cartesiano onde:
+X: dias de sprint
+Y: total de pontos somados do planning poker.
+
+Cada história equivale a uma pontuação, e para que seja entregue no dia certo a sprint,
+é necessário manter a linha de pontos entregues abaixo da linha tracejada, usado para
+manter o controle de entrega em relação a sprint.
