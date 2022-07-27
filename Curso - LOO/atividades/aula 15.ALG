@@ -1,6 +1,6 @@
-Algoritmo "Procedimentos & funções"
-// Disciplina   : Lógica de programação
-// Descrição   : Procedimentos / Funções
+Algoritmo "Procedimentos & funï¿½ï¿½es"
+// Disciplina   : LÃ³gica de programaï¿½ï¿½o
+// Descriï¿½ï¿½o   : Procedimentos / Funï¿½ï¿½es
 // Autor(a)    : Lucas Carlos da Silva
 // Data atual  : 27/07/2022
 Var
@@ -15,7 +15,7 @@ inicio
    escreval("Hello ", informacao)
 fimprocedimento
 
-//função
+//funï¿½ï¿½o
 funcao cubo(x : inteiro) : inteiro
 var resultado : inteiro
 inicio
@@ -28,7 +28,7 @@ Inicio
    leia(msg)
    hello(msg)
 
-   escreval("Digite um número para calcular o seu cubo: ")
+   escreval("Digite um nï¿½mero para calcular o seu cubo: ")
    leia(valor)
    return <- cubo(valor)
    escreval(return)
