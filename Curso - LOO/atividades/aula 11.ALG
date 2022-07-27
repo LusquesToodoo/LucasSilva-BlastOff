@@ -1,15 +1,15 @@
-Algoritmo "estrutura de controle de repetição"
-// Disciplina   : Lógica de programação
-// Descrição   : Estrutura de repetição (para)
+Algoritmo "estrutura de controle de repetiï¿½ï¿½o"
+// Disciplina   : Lï¿½gica de programaï¿½ï¿½o
+// Descriï¿½ï¿½o   : Estrutura de repetiï¿½ï¿½o (para)
 // Autor(a)    : Lucas Carlos da Silva
 // Data atual  : 26/07/2022
-Var
+Var 
 valor, i : inteiro
 
 
 Inicio
 
-para i de 1 até 10 passo 1 faça
+para i de 1 atï¿½ 10 passo 1 faï¿½a
 escreval(i)
 fimpara
 
