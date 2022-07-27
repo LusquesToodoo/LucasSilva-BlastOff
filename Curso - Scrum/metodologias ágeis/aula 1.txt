@@ -1,0 +1,48 @@
+São Paulo, 21 julho de 2022.
+Quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Scrum
+Objetivo: Conceitos de metologia ágil
+============================================================================
+Aula 0
+============================================================================
+
+O que são metodologias ágeis?
+---
+
+Metodologia ágel é um conceito que foi criado com no intuito de tornar processos
+de desenvolvimento de softwares mais rápidos e menos burocráticos, além de econômicos.
+Sua ideia primária trata-se de dividir um complexo trabalho em pequenas tarefas
+para que haja entrega de valor de forma constante e mais eficiente para os clientes.
+
+Esse conceito ajuda de várias formas diferentes, como por exemplo na organização, pois
+um projeto muito grande pode acabar por fazer com que o time que desenvolve ele deixa alguns
+pequenos detalhes passar.
+_____________
+
+
+[
+  Em 2001, foi iniciado um movimento chamado Manifesto
+  de Desenvolvimento Ágil de Software, que organizou e divulgou os principais
+  valores das metodologias ágeis, destacando aspectos como:
+    • Valorizar mais as pessoas e as interações humanas do
+      que as ferramentas;
+    • Desenvolver softwares trabalhando com documentações
+      mais abrangentes;
+    • Ter foco na geração de valor para o cliente;
+    • Focar em testes contínuos e na adaptação à mudanças
+  rápidas ao longo de cada projeto;
+  Portanto, o que podemos chamar de mindset ágil veio então para
+  solucionar esses problemas, fazendo com que os projetos sejam separados
+  em pequenos passos, que são mais objetivos e mais rápidos de serem
+  concluídos.
+  Quais são as metodologias ágeis mais conhecidas?
+  Atualmente existem muitas metodologias ágeis diferentes. Algumas
+  são mais utilizadas nas empresas de tecnologia e nos departamentos de
+  desenvolvimento, e outras são mais voltadas, por exemplo, para processos
+  de manufatura e operações em fábricas. Além disso, até mesmo áreas como
+  o marketing já usam muitas metodologias ágeis.
+  Para desenvolvedores de software, algumas das metodologias ágeis
+  mais conhecidas são:
+]

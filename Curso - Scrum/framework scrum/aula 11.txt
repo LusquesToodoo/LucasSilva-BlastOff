@@ -1,0 +1,39 @@
+São Paulo, 25 julho de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Framework Scrum
+Objetivo: Productbacklog
+============================================================================
+Aula 11
+============================================================================
+
+Productbacklog é responsabilidade do PO. Ele é formado de vários PBI (Product
+Backlog Itens).
+Os PBI's são formados por:
+
+- Features
+  - User Stories
+
+- Correção de defeitos
+
+- Trabalho técnico
+
+- Conhecimento adquirido
+
+Nível de detalhamento do productbacklog:
+  Alta > Prioridade > Baixa prioridade
+
+Alta
+  Requisitos com alto grau de detalhamento (user stories decompostas).
+
+Prioridade
+  Requisitos com médio grau de detalhamento (user stories maiores)
+
+Baixa
+  Requisitos com baixo grau de detalhamento (épicos)
+
+
+PS:
+User story -> uma ferramenta para definir e organizar os requisitos do
+sistema muito utilizada em metodologias ágeis.

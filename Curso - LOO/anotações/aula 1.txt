@@ -1,0 +1,24 @@
+// São Paulo, 26 julho de 2022.
+// Terça-feira
+
+// Nome: Lucas Carlos da Silva
+// Curso: Lógica de programação
+// Objetivo: Apresentação e definições
+
+Lógica de programação -> técnica para colocar instruções numa sequência Lógica
+para que seja possível atingit determinado objetivo.
+
+hardware -> parte física do sistema (a parte que você chuta)
+
+software -> parte lógica do sistema (a parte que você xinga)
+
+Dispositivo de entrada -> capta alguam informação para o software
+Dispositivo de armazenamento -> armazena a informação
+Dispositivo de processamento -> Processa a informação de maneira lógica
+Dispositivo de saída -> Pegam uma informação presente no sistema e devolve para o usuário.
+
+Algoritmo -> Sequência de isntruções ordenada, finita e não ambígua (direta e clara), que serão executadas.
+Como se fosse uma receita de bolo.
+
+Fluxograma -> uma forma de organizar o algoritmo, descreve o fluxo de dados e instruções usando desenhos geométricos.
+

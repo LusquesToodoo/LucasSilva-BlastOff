@@ -1,0 +1,24 @@
+São Paulo, 25 julho de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Framework Scrum
+Objetivo: Planning Poker
+============================================================================
+Aula 15
+============================================================================
+
+Planning poker é uma unidade de medida usada pelo time para estimar a
+complexidade da user storie.
+As notas, são dadas de acordo com a sequência de fibonacci.
+São usados os valores de 1 a 13, sendo 1 muito fácil e 13 muito difícil.
+
+1, 2, 3, 5, 8, 13, 20, 40, 100.
+
+Os valores fora do intervalor de 1 a 13 são usados quando não se tem certeza
+da complexidade do user storie e ele deve ser retornado ao PO para se obter
+mais informações, para ser revisto.
+
+1, 2, 3 -> fácil
+5 -> mediano
+8, 13 -> difícil

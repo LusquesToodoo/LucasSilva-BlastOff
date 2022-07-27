@@ -1,0 +1,44 @@
+São Paulo, 22 julho de 2022.
+Sexta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Framework Scrum
+Objetivo: Scrum team
+============================================================================
+Aula 5
+============================================================================
+
+Características de um time de desenvolvimento Scrum:
+[
+   Auto-organizado:
+   [
+    Em relação a sprint, o time tem o poder de decisão nas mãos, junto a responsabilidade
+    de desenvolver o projeto dentro do tempo da sprint.
+   ]
+
+   Comunicação frequente:
+   [
+    O time deve ter uma comunicação, onde o time ajude um ao outro no processo
+    de desenvolvimento.
+   ]
+
+   Comunicação transparente:
+   [
+    Na retrospectiva, ser transparente. Falar abertamente o que deu certo e o que
+    deu errado no processo de desenvolvimento para evitar atrasos no processo de
+    desenvolvimento e para buscar auxilio com os outros integrantes do time.
+   ]
+
+   Tamanho certo:
+   [
+    time até 10 pessoas para ter uma comunicação adequada.
+   ]
+   
+   - Foco e compromentimento
+   - Entrosamento
+   - Trabalho em tirmo sustentável
+   - Atitude mosqueteira
+   - Pessoal T-sharpped
+   - Multi-Funcional
+   
+   ]
