@@ -1,0 +1,107 @@
+São Paulo, 28 julho de 2022.
+quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Programação orientada a Objetivos
+Assunto: Introdução
+
+============================================================================
+Aula 1
+============================================================================
+
+O que é Programação orientada a objetos?
+---
+POO trata-se de um paradigma de programação. Um paradigma é um estilo de programação,
+um modelo, um padrão de desenvolvimento, uma metodologia. Não se trata de uma linguagem,
+mas a forma como você soluciona problemas usando uma determinada linguagem de programação.
+A forma como o código deve ser escrito e como ele é interpretado, arquitetura do código e etc.
+Um paradigma de programação é a maneira pela qual a programação de computadores é desenvolvida.
+
+A programação orientada a objetos surgiu com o intuito de tornar a programação mais
+tangível, isto é, mais próxima dos objetos do mundo real (por isso o nome desse tipo
+de programação). A POO se baseia principalmente em quatro conceitos chave:
+
+classes, objetos, atributos e métodos.
+_____________
+
+Como funciona a programação orientada a objetos?
+---
+[
+  Como já mencionado, o objetico da POO é trazer a programação mais próxima do mundo real, os
+  objetos da programação são como os objetos do mundo real, precisam de uma base, de matéria prima,
+  um molde, para que possam ser criados. Uma base inicial que lhe dê forma.
+  
+  Esse molde/matéria prima do mundo real, na programação recebe o nome de "Classe".
+]
+
+[
+  No mundo real, um objeto tem atributos como:
+  - cor
+  - peso
+  - tamanho
+  - textura.
+
+  Na POO é a mesma coisa: as características indivíduais de um objeto são os seus atributos.
+]
+
+[
+  Por fim, as funcionalidades(funções) de um objeto são chamadas de métodos.
+]
+
+O que torna a POO muito versátil e dinâmica é o fato de que algumas particularidades
+podem ser compartilhadas por diferentes tipos de objetos.
+_____________
+
+O que faz uma linguagem de programação ser orientada a objetos?
+---
+Para que seja considerada orientada a objeto, ela precisa ter alguns atributos que interligam
+os conceitos citados acima (objeto, classe, atributo e método). Esses atributos são:
+
+- Encapsulamento
+[
+  É a capacidade que determinado método ou atributo de um objeto tem1
+  de se manter funcional, porém invisível. Isso garante uma camada extra de
+  proteção para o software ou aplicação desenvolvido com a POO, pois os
+  detalhes de implementação não são revelados. Dessa forma, o
+  desenvolvedor pode declarar que aquele método é privado, e não público.
+  ---
+  Significa que a informação contida naquele objeto não poderá ser acessada
+  de forma indevida.
+]
+- Herança
+[
+  Na POO, a herança é atributo que existe entre classes. Nesses casos,
+  as chamadas classes filhas recebem características da chamada classe
+  mãe, ou seja, a classe primária A herança pode ser muito útil para um
+  reaproveitamento de código, por exemplo.
+  ---
+  Sendo assim, se torna possível criar uma nova classe a partir de uma já
+  existente, na intenção de reaproveitar código, herdando o código já existente
+  na classe mãe.
+]
+- Polimorfismo
+[
+  O polimorfismo é um atributo dos métodos dos objetos. Significa dizer
+  que um mesmo método pode ser utilizado em diferentes objetos, de
+  diferentes classes. No caso, o polimorfismo é a alteração do funcionamento
+  interno de um método herdado de um objeto anterior.
+  ---
+  Conceito onde duas ou mais classes que são herdeiras de uma mesma superclasse
+  podem chamar métodos com a mesma assinatura (identificação), mas que esse método
+  possa se comportar de maneira diferentes de acordo com a classe herdeira que chama ele.  
+]
+- Abstração
+[
+  A abstração também é conhecida como interface ou template e tem
+  como objetivo representar um objeto de forma abstrata, que foi
+  obrigatoriamente herdado por outras classes. Assim, é possível criar uma
+  classe abstrata com atributos e métodos, mas sua implementação deve ser
+  feita nas classes herdadas. Na programação, é chamada de superclasse,
+  sendo que um objeto não pode ser criado diretamente dela.
+  ---
+  Na programação, a abstração sugere a distinção que deve ser feita entre “o que” o programa faz e “como”
+  ele é implementado. Por exemplo, quando um procedimento é chamado, pode-se concentrar somente no que ele
+  faz; apenas quando se está escrevendo o procedimento é que deve-se concentrar em como implementá-lo.
+]
+
+_____________

@@ -1,0 +1,155 @@
+São Paulo, 28 julho de 2022.
+quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Programação orientada a Objetivos
+Assunto: O que é um Objeto?
+
+============================================================================
+Aula 3
+============================================================================
+
+Objeto -> Coisa material ou abstrata que pode ser percebida pelos sentidos e descrita
+por meio das suas caracteristicas, comportamentos e estado atual.
+Ou seja, tudo que tem características, comportamento e estado, é um objeto.
+
+ex:
+Um celular, é um objeto. (material)
+Um botão, é um objeto. (material)
+Um carro, é um objeto. (material)
+
+uma venda, é um objeto. (abstrato)
+um cliente, é um objeto. (abstrato)
+Um compromisso marcado na agenda, é um objeto. (abstrato)
+
+Um celular, é um objeto. (material)
+caracteristicas:
+[
+  Tem uma tela
+  tem botão de desligar
+  tem botão de volume
+]
+comportamento:
+[
+  (O que podemos fazer com esse objeto?)
+  Ligar/Desligar
+  Tirar fotos
+  Gravar áudios
+  Nos comunicar
+]
+estado:
+[
+  Novo
+  Velho
+  Desligado
+  Arranhado
+  Sem bateria
+]
+
+um compromisso na agenda, é um objeto. (abstrato)
+caracteristicas:
+[
+  dia que foi marcado
+  roupa que precisa ir
+  hora que foi marcado
+]
+comportamento:
+[
+  (O que podemos fazer com esse objeto?)
+  Podemos marcar
+  Podemos desmarcar
+  Podemos adiar
+]
+estado:
+[
+  combinado
+  cancelado
+  remarcado
+]
+_____________
+
+Classe -> Molde para um objeto
+ex:
+classe CANETA
+
+Toda classe deve responder três perguntas:
+
+Que coisas eu tenho?
+[
+  modelo
+  cor
+  ponta
+  carga
+  tampada
+  destampada
+]
+Que coisas eu faço?
+[
+  escrever
+  rabiscar
+  pintar
+  tampar
+  destampar
+
+]
+Como eu estou agora?
+[
+  50% de carga
+  ponta fina
+  destampada
+  escrevendo
+  rabiscando
+]
+
+caracteristicas -> atributos, o que compõe o objeto.
+
+comportamentos -> funções, rotinas internas desse objeto.
+
+estado/status -> características atuaia, no momento em que o objeto está sendo observado.
+
+O nome dado ao processo de gerar um objeto a partir de uma classe é "instanciar", o objeto é
+instanciado (gerado) a partir da classe.
+
+forma de instancias um objeto:
+{
+'caneta0' (esse é nome do meu novo obj) = new 'Caneta' (essa é a class)
+
+caneta0.cor = "Azul" <- dessa forma mudamos os atributos (características) do nosso obj.
+
+caneta0.rabiscar() <- dessa forma, chamamos o método (rotina/função) rabiscar()
+}
+
+Conclusão:
+
+Classe -> Define os atributos e métodos comuns que serão compartilhados por um objeto.
+
+Objeto -> É a instância de uma classe.
+
+Abstração -> Alguns livros consideram esse conceito o pilar da POO.
+Trata-se de levar em consideração apenas os atributos do objeto que realmente são relevantes
+no momento atual do códigio.
+
+
+Exercicio:
+Identifique dois objetos físicos do seu ambiente e classifique-os.
+
+Classe telefone
+
+caracteristicas
+[
+  preto
+  s/ fio
+  recarregável
+]
+comportamento
+[
+  efetua ligações
+  mostra a hora
+  toca ao receber ligação
+]
+estado
+[
+  carregando
+  bateria 100%
+  conectado a rede telefonica
+]

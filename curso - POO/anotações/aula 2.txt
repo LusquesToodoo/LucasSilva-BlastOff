@@ -1,0 +1,78 @@
+São Paulo, 28 julho de 2022.
+quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Programação orientada a Objetivos
+Assunto: O que é POO?
+
+============================================================================
+Aula 2
+============================================================================
+
+Origem da POO
+---
+
+POO: 
+[
+  Sigla em português para Programação Orientada a Objeto.
+
+  Em inglês a sigla é OOP -> object oriented programming
+]
+
+Objetivo da POO:
+[
+  Aproximar o mundo digital do mundo real, fazendo assim diminuir
+  a curva de aprendizado.
+]
+
+timeline dos paradigmas
+[
+programação de baixo nível -> programação linear -> programação estruturada -> programação modular -> POO
+
+Programação de baixo nível:
+[
+  Comandos programados diretamente na máquina que os executava, escritos em linguagem de máquina.
+]
+
+Programação linear:
+[
+  Programação em uma línguagem de alto alto nível, porém sua execução era somente linear.
+]
+
+Programação estruturada:
+[
+  Esse paradigma permitida blocos de programação linear que poderiam ser executados fora da ordem original.
+]
+
+Programação modular:
+[
+  Evolução da programação estruturada, com conceitos e capacidades mais parrudas.
+  Poderia-se criar pequenos módulos de blocos encapsulados possibilitando compor sistemas maiores.
+]
+
+POO:
+[
+  Evolução do paradigma modular.
+]  
+
+Vantagens:
+[
+  Lembre da sentença "Comer nada"
+
+  COMER N(ada)
+
+  C -> Confiável, por ser modular, caso um objeto precise entrar em manutenção, os demais objetos não irão
+  necessáriamente árar de funcionar.
+
+  O -> Oportuno, os objetos podem ser desenvolvidos paralelamente.
+
+  M -> Manutenivel, fácil de atualizar e/ou fazer manutenção nos objetos.
+
+  E -. Extendível, o software não é estático, ele pode crescer e ser desenvolvido para se tornar mais útil.
+
+  R -> Reutilizável, algo que pode ser utilizavel em diversas situações diferentes, que pode ser usado em outro
+  sistema.
+
+
+  N -> Natural, algo mais simples de entender.
+]
