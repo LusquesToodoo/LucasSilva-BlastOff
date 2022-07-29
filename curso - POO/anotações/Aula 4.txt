@@ -14,7 +14,7 @@ LMU/UML -> Linguagem de Modelagem Unificada
 A UML simplifica a declaração de classes a um retângulo, que vai ser responsável
 por representar essa classe.
 
-___________________________
+ _________________________
 | Caneta (nome da classe) |
 |_________________________|
 | modelo (atributos)      |
@@ -68,7 +68,7 @@ Na prática:
 representação simplificada (UML) da classe ->
 ---
 
-___________________________
+ _________________________
 | Caneta (nome da classe) |
 |_________________________|
 | + modelo (atributos)    |

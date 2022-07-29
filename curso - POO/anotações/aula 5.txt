@@ -1,0 +1,141 @@
+São Paulo, 28 julho de 2022.
+quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Programação orientada a Objetivos
+Assunto: Métodos especiais
+
+============================================================================
+Aula 5
+============================================================================
+
+Método acessores (Getters)
+------------------------------
+O método get, basicamente coloca uma camada de proteção onde limita o usuário
+a ter acesso somente a determinadas informações.
+
+Por ex:
+Ao acessar um caixa eletrônico, você só pode ver o (atributo) saldo da sua conta, o caixa
+eletrônico funciona como um agente intermediário, onde ele vai ao banco de dados
+do banco (que tem a informação de saldo de todos os clientes) e informa somente
+o SEU saldo. o método GET, como é conhecido, tem o papel de ser esse intermediador,
+não dando acesso ao método que em si, mas sim retornando o valor do método que se refere
+aquele usuário, protegendo assim, a informação dos demais clientes.
+
+
+como ficaria em portugol?
+
+cliente = nova Conta
+cliente.saldo -> ERRADO!
+cliente.getSaldo() -> CERTO! Retornar o atributo saldo
+
+Repare que o get é um método, que retorna o atributo desejado.
+
+Mas porque usar um método getter?
+---
+Ele permite acesso a determinado atributo mantendo a segurança de acesso
+a ele.
+----------
+
+Método modificadores/mutantes (Setters)
+------------------------------
+O método set, também coloca uma camada de proteção onde limita o usuário
+a alterar somente a determinadas informações.
+
+Por ex:
+Usando como exemplo um banco, ao acessar o caixa desse banco, ele que trabalha
+como agente intermediador, quando o cliente deseja depositar dinheiro em sua conta, ele
+entrega ao atendente, ele acessa a conta do cliente, acrescenta o seu crédito e guarda o valor
+no cofre. Caso os clientes simplesmente jogassem todo o dinheiro no cofre, se tornaria uma bagunça.
+Fazendo assim , método SET, uma garantia de segurança e organização.
+
+como ficaria em portugol?
+
+var saldo = R$ 1200,00
+cliente = nova Conta
+cliente.saldo = cliente.saldo + saldo -> ERRADO!
+cliente.setSaldo(saldo) -> CERTO! Soma ao atributo saldo, o valor depositado pelo cliente.
+
+Geralmente (mesmo não sendo uma regra) os métodos setters sempre passam um parâmetro para na função.
+Geralmente eles também são repletos de outros métodos internos que organizam e gerenciam essa informação.
+Os métodos SETTERS são mais abstratos que os GETTERS.
+----------
+
+Os atributos de Getters e Setters também tem níveis de visibilidade.
+
+EXEMPLO DE APLICAÇÃO:
+
+ _________________________
+| Caneta                  |
+|_________________________|
+| + modelo                |
+| - ponta                 |
+|_________________________|
+| + getModelo()           |
+| + setModelo()           |
+|                         |
+| + getPonta()            |
+| + setPonta()            |
+|_________________________|
+
+Classe Caneta
+  publico modelo : Caractere
+  privado ponta : Real
+
+  publico Metodo getModelo()
+    retorne modelo
+  FimMetodo
+
+  publico Metodo setModelo(m: Caractere)
+    modelo = m
+  FimMetodo
+
+  publico Metodo getPonta()
+    retorne ponta
+  FimMetodo
+
+  publico Metodo setPonta(p: Real)
+    ponta = p
+  FimMetodo
+FimClasse
+
+obs: 
+  um método get/set modificador reveber como parâmetro um valor
+  do mesmo tipo do atributo ao qual vai alterar, isso é importante ser
+  lembrado para casos de linguagens fortemente tipadas.
+
+
+c1 = nova Caneta
+
+Chamada para Setter:
+
+c1.setModelo("Bic Cristal")
+c1.setPonta(0.5)
+
+Chamada para Getters:
+escreval(c1.getModelo())
+escreval(c1.getPonta())
+
+
+Método Construtor (Construct)
+------------------------------
+O método construtor faz uma espécie de processo de automação, onde no 
+momentoem  que um objeto é instânciado, o método construtor é executado
+e seta atributos pré determinados.
+
+Ex:
+
+Classe Caneta
+  Metodo construtor(m:Caracter, c:Caracter, p:Real)
+    setModelo(m)
+    setCor(c)
+    setPonta(p)
+    tampar()
+  fimMetodo
+FimClasse
+
+forma de instanciar quando há um método construtor com parâmetros:
+
+c1 = noca Caneta("BIC", "AZUL", 0.5)
+
+----------
