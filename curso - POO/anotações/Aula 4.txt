@@ -1,0 +1,130 @@
+São Paulo, 28 julho de 2022.
+quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Programação orientada a Objetivos
+Assunto: O que é visibilidade
+
+============================================================================
+Aula 4
+============================================================================
+
+LMU/UML -> Linguagem de Modelagem Unificada
+
+A UML simplifica a declaração de classes a um retângulo, que vai ser responsável
+por representar essa classe.
+
+___________________________
+| Caneta (nome da classe) |
+|_________________________|
+| modelo (atributos)      |
+| cor                     |
+| carga                   |
+|_________________________|
+| escrever() (métodos)    |
+| rabiscar()              |
+| tampar()                |
+|_________________________|
+
+Esse retângulo representa uma classe.
+Repare que o nome da classe é escrito em maiúsculo, enquanto seus atributos
+e métodos em minúsculo, sendo que os métodos tem um parênteses depois do nome.
+Isso é uma convenção na programação, se iniciar com maiúsculo, é um nome de classe.
+
+Modificadores de visibilidade
+---
+A visibilidade indica o nível de acesso aos componentes internos de uma classe.
+Para definir esse nível de acesso, é usado três símbolos:
+
++ -> visíbilidade pública
+- -> privado
+# -> protegido
+
+O que caracteriza um elemento público:
+[
+  - Todo e qualquer um pode acessar esse elemento.
+
+  A classe atual e todas as outras classes podem tem acesso
+  a esse elemento.
+]
+
+O que caracteriza um elemento privado:
+[
+  - Esse elemento pode acessado apenas por métodos específicos.
+
+  Somente a classe atual tem acesso a esse elemento.
+]
+O que caracteriza um elemento protegido:
+[
+  - Somente pode acessar quem pertence a mesma família.
+
+  A classe atual tem acesso a esse elemento, e também todas as suas sub-classes.
+]
+_____________
+
+Na prática:
+
+------------------------------
+representação simplificada (UML) da classe ->
+---
+
+___________________________
+| Caneta (nome da classe) |
+|_________________________|
+| + modelo (atributos)    |
+| + cor                   |
+| - ponta                 |
+| # carga                 |
+|_________________________|
+| + escrever() (métodos)  |
+| - rabiscar()            |
+| - tampar()              |
+|_________________________|
+
+------------------------------
+declaração da classe em portugol ->
+---
+
+Classe Caneta
+  publico modelo: Caractere
+  publico cor: Caractere
+  privado ponta: real
+  protegido carga: Inteiro
+  protegido tampada: logico
+
+  publico Metodo escrever()
+
+  FimMetodo
+
+  publico Metodo rabiscar()
+
+  FimMetodo
+FimClasse
+
+------------------------------
+gerando objeto a partir da classe ->
+---
+
+[ c1 = nova Caneta ] -> objeto c1 gerado
+
+[ c1.modelo = "BIC cristal" ] -> Somente é possível alterar o conteúdo do atributo 'modelo',
+por ele ser um atributo público
+
+[ c1.cor = "Azul" ]
+
+[ c1.ponta = 0.5 ] -> NÃO FUNCIONA, POIS O ATRIBUTO É PRIVADO. Essa chamada não consegue acessar.
+A forma de alterar o valor desse atributo é usando métodos.
+Métodos acessores e métodos modificadores (assunto para próxima aula).
+
+[ c1.carga = 80 ] -> NÃO FUNCIONA, POIS O ATRIBUTO É PROTEGIDO.
+Para alterar esse elemento, se torna necessário usar métodos da própria classe, ou de suas sub-classes
+(classes geradas a partir dessa classe).
+
+[ c1.escrever() ] -> Somente é possível alterar o conteúdo do atributo 'modelo',
+por ele ser um atributo 
+
+[ c1.rabiscar() ] -> Não funciona, pois o método é privado. SOmente pode ser chamado dentro da própria
+classe.
+
+
+
