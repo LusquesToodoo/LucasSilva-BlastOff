@@ -1,0 +1,34 @@
+São Paulo, 28 julho de 2022.
+quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Programação orientada a Objetivos
+Assunto: POO - Encapsulamento
+
+============================================================================
+Aula 7
+============================================================================
+
+AEHP -> Três pilares da orientação ao objeto.
+
+A -> absutração
+
+E -> Encapsulamento
+
+H -> heraça
+
+P -> polimorfismo
+
+// ------------------------------
+
+Encapsulamento -> Usado por questão de proteção. Támbem usado para criar um padrão.
+
+Mas o que seria emcapsular?
+---
+Encapsuilar trata-se de ocultar partes independetes da implementação, permitindo
+consturir partes invisíveis ao mundo exteriror.
+_____________
+
+é possível trocar informações com cápsulas, essa troca de informações é chamada de mensagem.
+O programa não enctra na cápsula, ele apenas fornece uma informação e recebe um retorno, sem necessáriamente
+precisar saber como o método funciona/trabalha.
