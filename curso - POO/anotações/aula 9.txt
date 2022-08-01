@@ -1,0 +1,133 @@
+São Paulo, 28 julho de 2022.
+quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Programação orientada a Objetivos
+Assunto: Herança
+
+============================================================================
+Aula 9
+============================================================================
+
+Herança é o segundo pilar da orientação a objeto.
+Esse conceito permite basear um nova classe na definição de uma outra 
+preciamente existente.
+
+A herança será aplicada tanto para características quanto para comportamentos.
+
+[classe <nome da classe> estende <mãe da classe>] -> assim você faz a classe
+<nome da classe> herdar atributos e métodos da classe <nome da classe>.
+
+Clase mãe, progenitora, superclasse -> uma classe que dá m a outras classes.
+
+Classe filha, sub-classe -> Classe gerada a partir de outra classe pré-existente.
+
+//------------------------------
+
+Na herança, é possível gerar e navegar por uma árvore de herança.
+
+Super classe -> está acima (progenitora)
+
+Sub classe -> está abaixo (descendente)
+
+uma classe progenitora pode ser descendente, assim como uma classe descendente
+pode ser progenitora. Depende totalmente do referêncial do observador.
+
+Raiz -> Quando se tem cuma clase que não tem super-classe, essa classe é considerada a raiz
+da árvore.
+
+Folha -> quando uma classe não tem descendentes, essas classes recebem
+a nomeclatura de folha.
+
+Descendente -> Todo elemento que for descendente de uma classe, mas que a relação não seja
+de mãe e filha.
+
+EX:
+
+A -> B -> c
+
+A é superclasse de B, que é superclasse de C.
+
+C é descendente de A. A é ancestral de C.
+A não é ancestral de B, pois a nomeclatura só serve para netos em diante.
+
+Especialização -> Percorrer uma árvore de cima para baixo
+
+Generalização -> Percorrer a árvore de baixo para cima.
+
+_____________
+
+Tipos de heranç
+---
+1 -> Herança de implementação / herança pobre
+[
+  Trata-se de quanto uma sub-classe não tem nenhuma implementação nova
+  em relação a superclasse, ou seja, A -> B, se considerarmos os atributos e
+  métodos como um conjunto, A = B.
+]
+
+2 -> Herança para diferença
+[
+  Quando há implementação de atributos e métodos em relação a superclasse.
+  Se A -> B, e considerarmos as classes como conjuntos, é correto afirmar que
+  B contém A, mas A não contém B, pois B guarda elementos que não estão
+  presentes em A.
+
+]
+_____________
+
+Especialização -> nomeclatura dada a uma classe mais nichada para um elemento específico.
+
+ex:
+
+// Classe generalista
+
+classe Eletrodomestico:
+[
+  corrente: caracter
+  tensao: real
+  ligado: logico
+  ---------------------
+  ligarTomada()
+  desligarTomada()
+]
+
+// Classe especialista
+
+classe Geladeira implementa Eletrodomestico:
+[
+  portaAberta: logico
+  ---------------------
+  congelar()
+  descongelar()
+]
+
+_____________
+
+Abstrato e final:
+
+Classe abstrata:
+[
+  Não pode ser instanciada.
+  Só pode servir como progenitora.
+]
+
+Método abstrato:
+[
+  Declarado, mas não implementado na progenitora.
+  Só pode ser implementado dentro de uma interface
+  ou de uma classe abstrata.
+]
+
+Classe final:
+[
+  Não pode ser herdada por outra classe.
+  Obrigatoriamente folha.
+]
+
+Método final:
+[
+  Não pode ser sobrescrito por suas sub-classes.
+  Obrigatoriamente herdado. Não se pode gerar 
+  uma especialização desse método.
+]

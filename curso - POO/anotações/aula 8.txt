@@ -1,0 +1,61 @@
+São Paulo, 28 julho de 2022.
+quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Programação orientada a Objetivos
+Assunto: Relacionamentos entre classes
+
+============================================================================
+Aula 8
+============================================================================
+
+UEC - Ultra Emoji Combat
+
+Para compor a classe Lutador, serão necessários os seguintes atributos:
+{
+Nome
+nacionalidade
+idade
+altura
+protegidoscategoria
+vitorias
+derrotas
+empates
+}
+
+ _________________________
+| Lutador                 |
+|_________________________|
+| - Nome                  |
+| - nacionalidade         |
+| - idade                 |
+| - altura                |
+| - protegidoscategoria   |
+| - vitorias              |
+| - derrotas              |
+| - empates               |
+|_________________________|
+| + aprensetar()          |
+| + status()              |
+| + ganharLuta()          |
+| + perderLuta()          |
+| + empatarLuta()         |
+|_________________________|
+
+
+Agora iremos criar a classe Luta que irá correlacionar os
+lutadores cadastrados:
+
+ _________________________
+| Luta                    |
+|_________________________|
+| - desafiado             |
+| - desafiante            |
+| - rounds                |
+| - aprovada              |
+|_________________________|
+| + marcarLuta()          |
+| + lutar()               |
+|_________________________|
+
+O relacionamento entre as classes que iremos utilizar, é o de agregação.

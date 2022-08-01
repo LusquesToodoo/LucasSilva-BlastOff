@@ -32,3 +32,69 @@ _____________
 é possível trocar informações com cápsulas, essa troca de informações é chamada de mensagem.
 O programa não enctra na cápsula, ele apenas fornece uma informação e recebe um retorno, sem necessáriamente
 precisar saber como o método funciona/trabalha.
+
+
+Como criar um encapsulamento/interface?
+---
+Encapsulamentos não tem atributos, somente métodos
+Numa interface, todo os métodos são públicos.
+
+exemplo:
+ _________________________
+| << interface >>         |
+| Controlador         |
+|_________________________|
+|_________________________|
+| + ligar()               |
+| + desligar()            |
+| + abrirMenu()           |
+| + fecharMenu()          |
+| + aumentaVolume()       |
+| + diminuiVolume()       |
+| + abrirMenu()           |
+| + fecharMenu()          |
+| + ligarMudo()           |
+| + play()                |
+| + pause()               |
+|_________________________|
+
+método abstrato
+---
+Método onde não é especificado como ele funciona, apenas o resultado que trás.
+Aquele método que não é desenvolvido na interface, apenas é especificado que o método existe,
+por exemplo o método aumentaVolume(), ele não será desenvolvido na interface, não será especificado
+como ele fará para aumentar o volume, somente será informado a reação.
+
+Método previsto, mas não implementado
+
+_____________
+
+Quando se deseja encapsular uma classe, todos os atributos dessa classe não serão públicos, ou serão
+privados, ou protegidos. O objetivo é garantir que meios externos não possam alterar seus atributos.
+
+ex: 
+
+ _________________________
+| ControleRemoto          |
+|_________________________|
+| - volume                |
+| - ligado                |
+| - tocando               |
+|_________________________|
+| + ligar()               |
+| + desligar()            |
+| + abrirMenu()           |
+| + fecharMenu()          |
+| + aumentaVolume()       |
+| + diminuiVolume()       |
+| + abrirMenu()           |
+| + fecharMenu()          |
+| + ligarMudo()           |
+| + play()                |
+| + pause()               |
+|_________________________| 
+
+Como implementar a capsula no objeto:
+[
+Classe ControleRemoto implementa Controlador
+]

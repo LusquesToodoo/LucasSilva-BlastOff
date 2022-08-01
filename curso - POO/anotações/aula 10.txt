@@ -1,0 +1,38 @@
+São Paulo, 28 julho de 2022.
+quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Programação orientada a Objetivos
+Assunto: Conceito de polimorfismo
+
+============================================================================
+Aula 10
+============================================================================
+
+O que é polimorfismo?
+---
+[
+Poli -> muitas
+morfo -> formas
+]
+
+Permite que um mesmo nome represente vários comportamentos diferentes.
+__________________________
+
+Assinatura do método
+---
+Quantidade e os tipos dos parâmetros.
+Independe do retorno. Somente é levado em consideração os parâmetros.
+__________________________
+
+Existem vários tipos de polimorfismo, mas os dois que estão sendo foco de estudos
+nesse momento são:
+
+Polimorfismo sobreposição:
+[
+Acontece quanod substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
+Suma sub-classe pode sobrepor um método já sobreposto na superclasse. Ou seja, é possível sobrepor uma
+sobreposição.
+]
+
+Polimorfismo sobrecarga
