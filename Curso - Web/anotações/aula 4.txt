@@ -1,0 +1,20 @@
+Elementos semânticos
+---
+header - Usado para definir área do cabeçalho
+[
+  Usado de forma geral para representar o topo do elemento.
+  Não deve ser usado dentro do <FOOTER> ou dentro dele mesmo.
+]
+main - Especifica o conteúdo principal do site
+[
+  Deve ser usado somente uma vez. Deve ser usado como raiz.
+]
+nav - Usado para definir uma área para navegação
+
+section - Usado para definir área de uma seção
+
+article - Especifica área para colocar um artigo
+
+aside - Usado para definir um local para área lateral.
+
+footer - usado para o rodapé da página

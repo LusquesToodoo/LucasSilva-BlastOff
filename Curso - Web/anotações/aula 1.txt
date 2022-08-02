@@ -1,0 +1,31 @@
+WWW - World Wide Web
+
+URL - Uniform Resouce Locator
+[
+  sintaxe:
+
+  Protocolo://servidor/caminho/recurso
+]
+
+HTTP - Hyper Text Transfer Protocol
+
+HTTPS - Hyper Text Transfer Protocol Secure - 'S' usa uam camada extra de proteção que usa SSL/TLS.
+[
+  Criptografa as informações e garante a autenticidade do servidor
+]
+
+FTTPS
+
+FPT - File transfer Protocol
+[
+  Recebe e executa a requisição de envio e recebimento de arquivos entre cliente e servidor.
+
+  sintaxe:
+  ftp://[username]:[password]@[servidor]:[porta]
+]
+
+WC3 - Word widw web consortium
+[
+  Orão responsável pela padronização do HTML, fundada por Tim BErnes Lee,
+  o mesmo criados do HTML.
+]

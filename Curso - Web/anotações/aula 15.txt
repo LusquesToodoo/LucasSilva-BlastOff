@@ -1,0 +1,12 @@
+em - medida que tem como referência o tamanho da fonte do elemento.
+
+ex - um ex é relativo à altura x de uma fonte
+ch - em relação a largura do zero
+
+rem - em relação ao tamanho da fonte da raiz (root)
+
+% - define o tamanho do elemento em porcentagem, relativo ao browser ou elemento pai, o tamanho do elemento não é fixo.
+
+vw - 1vw é relativo a 1% da largura da janela de visualização (window)
+
+vh - 1vw é relativo a 1% da altura da janela de visualização (window)
