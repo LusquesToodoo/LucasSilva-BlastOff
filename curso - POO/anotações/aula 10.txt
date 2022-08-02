@@ -30,9 +30,18 @@ nesse momento são:
 
 Polimorfismo sobreposição:
 [
-Acontece quanod substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
+Acontece quando substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
 Suma sub-classe pode sobrepor um método já sobreposto na superclasse. Ou seja, é possível sobrepor uma
 sobreposição.
+
+Feito em classes diferentes.
 ]
 
 Polimorfismo sobrecarga
+[
+  Tem assinaturas diferentes.
+
+  Feito na mesma classe.
+  O retorno é diferente de acordo com o tipo de parâmetro que é passado para
+  o método.
+]

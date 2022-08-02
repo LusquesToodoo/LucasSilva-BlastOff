@@ -11,7 +11,7 @@ Aula 9
 
 Herança é o segundo pilar da orientação a objeto.
 Esse conceito permite basear um nova classe na definição de uma outra 
-preciamente existente.
+previamente existente.
 
 A herança será aplicada tanto para características quanto para comportamentos.
 
