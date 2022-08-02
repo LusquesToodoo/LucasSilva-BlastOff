@@ -39,17 +39,15 @@
     background-color: #808080;
   }
 
-  .div-2 {
+    .div-2,
+    .div-interna {
     margin: auto;
     height: calc(100% - 50px);
     width: calc(100% - 50px);
     background-color: #daa520;
   }
 
-  .div-interna {
-    margin: auto;
-    height: calc(100% - 50px);
-    width: calc(100% - 50px);
+    .div-interna {
     background-color: #90ee90;
   }
 
