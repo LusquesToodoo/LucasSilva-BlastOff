@@ -1,11 +1,13 @@
   *:not(body) {
     margin: 0;
     padding: 0;
+
+    overflow: hidden;
   }
 
   h1,
   p {
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: 400;
     text-align: center;
     color: #fff;
@@ -17,33 +19,35 @@
 
   main {
     width: 100%;
-    border: solid 3px #000;
+    border: solid 0.2rem #000;
   }
 
   main>section {
-    margin: 35px auto 10px;
-    width: fit-content;
+    margin: 2.1875rem auto 0.625rem;
+    width: 100%;
+    max-width: 500px;
   }
 
   main>section div:first-child {
     margin: auto;
-    height: 50px;
-    width: 200px;
-    margin-bottom: 10px;
+    min-height: 3.125rem;
+    max-width: 12.5rem;
+    width: 100%;
+    margin-bottom: 0.625rem;
     background-color: #006400;
   }
 
   .div-1 {
-    height: 250px;
-    width: 500px;
+    height: 15.625rem;
+    width: 100%;
     background-color: #808080;
   }
 
     .div-2,
     .div-interna {
     margin: auto;
-    height: calc(100% - 50px);
-    width: calc(100% - 50px);
+    height: calc(100% - 3.125rem);
+    width: calc(100% - 3.125rem);
     background-color: #daa520;
   }
 
