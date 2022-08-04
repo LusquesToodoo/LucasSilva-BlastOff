@@ -1,0 +1,48 @@
+*:not(body) {
+  margin: 0;
+}
+
+#all-content {
+  margin: auto;
+  padding: 5px;
+  border: solid 3px;
+  border-radius: 5px;
+
+  min-width: 300px;
+  width: calc(100% - 50px);
+  max-width: 500px;
+
+  display: table;
+}
+
+.container-image {
+  margin-right: 15px;
+  height: 180px;
+  width: 100%;
+  max-width: 200px;
+
+  float: left;
+}
+
+.container-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.verse-title {
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-size: 2rem;
+}
+
+.verse-paragraph {
+  margin-top: -5px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin-right: 3px;
+  margin-bottom: 15px;
+  float: right;
+}
