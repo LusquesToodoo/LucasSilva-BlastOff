@@ -1,0 +1,50 @@
+body {
+  background-color: grey;
+}
+.red-matrix {
+  margin: auto;
+  width: 98%;
+  border: solid;
+  border-image-source: url(../images/image_0.png);
+  border-image-slice: 15;
+  border-image-width: 20px;
+  border-image-repeat: round;
+  border-image-outset: 5px;
+
+  background-image: url(../images/image_1.jpg);
+}
+.green-matrix {
+  margin: 30px auto;
+  width: 80%;
+  border: solid 3px;
+  border-radius: 20px;
+
+  background-color: darkgrey;
+
+  width: 80%;
+  background: darkgrey;
+  border: solid 3px;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+#information {
+  margin: 15px auto;
+  border: solid 2px;
+  border-radius: 2px;
+
+  min-height: 400px;
+  max-height: 600px;
+  min-width: 70%;
+  max-width: 80%;
+
+  display: block;
+
+  font-size: 16pt;
+
+  background-color: blue;
+}

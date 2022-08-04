@@ -1,0 +1,19 @@
+border-image-source:
+  Especifica endereço da imagem da borda.
+
+border-image-slice:
+  Especifica e ajusta uma fatia para a imagem que vai ser usada na borda.
+
+border-image-width:
+  Especifica a largura da borda com imagem.
+
+border-image-outset:
+  Especifica o distanciamento que a borda com imagem deve se descolar.
+
+border-image-repeat:
+  Especifica como a imagem da borda deve se repetir.
+
+border-image:
+  Essa propriedade é um shorthand para as propriedades citadas.
+  Porém ela não funciona muito bem com determinadas propriedades.
+  Outset não funciona.
