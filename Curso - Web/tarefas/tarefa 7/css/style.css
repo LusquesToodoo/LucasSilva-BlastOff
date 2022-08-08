@@ -1,0 +1,29 @@
+*:not(body) {
+  margin: 0;
+}
+
+#all-content{
+  margin: auto;
+  width: calc(100% - 26px);
+  max-width: fit-content;
+}
+.table{
+  border: outset 2px #ccc;
+  width: 100%;
+  margin: auto;
+}
+
+.table td, .table th{
+  border: inset 2px #eee;
+  /* border-right: 0 */
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.rowspan{
+  height: 5em;
+}
+.small{
+  margin-top: 20px;
+  font-size: 13px;
+}
