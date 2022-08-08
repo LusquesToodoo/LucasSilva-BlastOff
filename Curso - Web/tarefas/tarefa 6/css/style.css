@@ -1,0 +1,3 @@
+*:not(body) {
+  margin: 0;
+}
