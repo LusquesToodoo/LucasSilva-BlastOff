@@ -1,3 +1,32 @@
 *:not(body) {
   margin: 0;
 }
+
+#all-content{
+  margin: auto;
+  width: calc(100% - 26px);
+  max-width: fit-content;
+}
+.table{
+  width: 100%;
+  margin: auto;
+  border: solid 1px #000;
+  background-color: red;
+}
+
+tbody{
+  background-color: #000;
+}
+tbody tr{
+  display: table-row-group;
+  background-color: #fff;
+}
+
+.table td, .table th{
+  padding: 5px 10px;
+  text-align: center;
+}
+.small{
+  margin-top: 20px;
+  font-size: 13px;
+}
