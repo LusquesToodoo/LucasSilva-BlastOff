@@ -1,0 +1,6 @@
+<b> -> Marca o texto visualmente para o usuário.
+
+<strong> -> Marca a sentença do texto visualmente para o usuário e também usa o trecho como parte dos motores de busca dos navegadores web, sendo considerada assim uma tag semântica.
+
+Diferença de <i> e <em>
+A tag em representa ênfase importante no texto que está sendo escrito, enquanto que a tag i representa o texto que é iniciado de uma prosa, como uma palavra estrangeira, pensamentos de um personagem ficcional, ou quando o texto se refere a definição de uma palavra em vez de representar seu significado semântico.

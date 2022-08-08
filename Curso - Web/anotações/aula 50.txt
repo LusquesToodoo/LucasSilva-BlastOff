@@ -1,0 +1,21 @@
+Regra do @font-face
+------------------------------
+
+O @font-face é uma regra usada no css para que seja possível utiliar fontes fora do padrão.
+
+Sintaxe:
+
+@font-face{
+  font-family: (nome da família da fonte); -> [
+   o nome não precisa ser necessárioamente o nome da fonte.
+   Esse nome será usado apenas para requisitar os caractéres da fonte.
+  ]
+  scr: url(endereço do arquivo de fonte);
+}
+
+------------------------------
+Aula 53
+------------------------------
+
+text-align-last -> atributo referente a última linha do paragráfo.
+Tem as mesmas propriedades do text-align.
