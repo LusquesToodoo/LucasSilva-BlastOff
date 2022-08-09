@@ -1,0 +1,45 @@
+*:not(body) {
+  margin: 0;
+}
+
+th{
+  text-transform: uppercase;
+}
+.table, .table2{
+  margin: 10px auto;
+  border-collapse: separate;
+  border-spacing: 0px 0px;
+}
+
+.container-table2{
+  background-color: #eee;
+}
+.table2{
+  background-color: #fff ;
+}
+
+.table td ,.table th, .table2 td ,.table2 th{
+  padding: 2px;
+  border: inset 3px #aab;
+  border-right: inset 3px #fff;
+  border-bottom: inset 3px #fff;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+
+.table td:last-child, .table th:last-child{
+  border-right: solid 5px #777;
+}
+.table2-lastrow td{
+  border-bottom: solid 5px #777;
+}
+
+.last-row td[colspan]{
+  border-bottom: solid 5px #777;
+}
+
+
+.none{
+  display: none;
+}
