@@ -83,41 +83,7 @@ input{
 
 [type="reset"]{
   margin: auto;
-  padding: 5px 10px;
+  padding: 2px 7px;
   width: fit-content;
   display: block;
 }
-
-
-/*
-
-label{
-  display: block;
-  width: 200px;
-}
-
-#all-content{
-  margin: auto;
-  width: 500px;
-}
-
-.same-line{
-  display: flex;
-}
-.same-line label{
-  display: block;
-  width: 200px;
-}
-.same-line input{
-  display: block;
-  width: 100%;
-}
-
-.more-line{
-  display: flex;
-  justify-content: space-between;
-}
-
-.more-input{
-  max-width: 100px;
-} */
