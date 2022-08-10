@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <style>
+    form{
+      margin: 35px auto;
+      padding: 15px 25px;
+      width: fit-content;
+      border: solid 1px #000;
+      border-radius: 15px;
+    }
+
+    #button{
+      height: 125px;
+      width: 150px;
+      background-size: contain;
+      background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif);
+
+      color: white;
+
+      position: relative;
+    }
+
+    #button::after{
+      content: 'Botão';
+      display: block;
+      
+      height: 100%;
+      width: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #0003;
+    }
+
+    #submit{
+    }
+
+    #reset{
+    }
+  </style>
+</head>
+
+<body>
+  <form action="">
+      <!-- nome usuario -->
+      <label>Nome</label>
+      <input type="text" name="nome"> <br><br>
+
+      <!-- Email -->
+      <label>Email</label>
+      <input type="text" name="email"> <br><br>
+
+      <button id="button" type="button"> Botão </button>
+      <button id="submit" type="submit"> Enviar </button>
+      <button id="reset" type="reset"> Limpar </button>
+    </form>
+
+</body>
+
+</html>

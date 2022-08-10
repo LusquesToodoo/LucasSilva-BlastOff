@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tarefa 10</title>
+</head>
+
+<body>
+  <section id="all-content">
+    <h2>Ficha Cadastral</h2>
+    <form action="">
+      <div class="same-line">
+        <label for="name">Nome:</label>
+        <input id="name" type="text" maxlength="55">
+      </div>
+
+      <div class="more-line">
+        <div class="same-line">
+          <label for="rg">RG:</label>
+          <input class="more-input" id="rg" type="text" max="13">
+        </div>
+        <div class="same-line">
+          <label for="cpf">C.P.F.:</label>
+          <input class="more-input" id="cpf" type="text" maxlength="13">
+        </div>
+      </div>
+
+      <div class="same-line">
+        <label for="endereco">Endereço:</label>
+        <input id="endereco" type="text" maxlength="55">
+      </div>
+
+      <div class="more-line">
+        <div class="same-line">
+          <label for="sexo">Sexo:</label>
+          <select name="sexo" id="sexo">
+            <option value="none" selected disabled>Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminimo">Feminino</option>
+          </select>
+        </div>
+        <div class="same-line date">
+          <label for="dateBirthday">Data Nascimento:</label>
+          <input id="dateBirthday" type="date" maxlength="13">
+        </div>
+      </div>
+
+      <div class="same-line radio">
+        <label>Situação civil:</label>
+        <div class="same-line">
+          <input id="solteiro" name="estado-civil" type="radio">
+          <label for="solteiro">Solteiro(a)</label>
+        </div>
+
+        <div class="same-line">
+          <input id="casado-a" name="estado-civil" type="radio">
+          <label for="casado-a">Casado(a)</label>
+        </div>
+
+        <div class="same-line">
+          <input id="viuvo" name="estado-civil" type="radio">
+          <label for="viuvo">Viúvo(a)</label>
+        </div>
+      </div>
+      <div class="same-line">
+        <input type="reset" name="" id="" value="Limpar dados">
+      </div>
+
+    </form>
+  </section>
+</body>
+
+</html>
