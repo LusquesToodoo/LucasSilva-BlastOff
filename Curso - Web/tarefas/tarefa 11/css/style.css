@@ -1,0 +1,76 @@
+:root{
+
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+table{
+  width: 100%;
+}
+
+input, textarea{
+  padding: 2px;
+  margin: 2px 0;
+}
+
+label{
+  min-width: 125px;
+  padding-right: 10px;
+  display: block;
+  text-align: right;
+}
+
+label, input{
+  font-size: 2ch;
+}
+
+input{
+  width: 600px;
+  max-width: 600px;
+}
+textarea{
+  min-width: 600px;
+  max-width: 650px;
+}
+
+#all-content{
+  margin: 20px auto;
+  min-width: 650px;
+  width: fit-content;
+}
+
+.label{
+  position: relative;
+}
+
+.label + td > p{
+  margin: 20px 0 25px;
+  font-size: 10;
+  line-height: 1.3em;/* font-size: 2ch; */
+
+  position: relative
+}
+
+.label + td > p > br:nth-child(2){
+  margin-bottom: 7px;
+}
+
+.label-textarea label{
+  position: absolute;
+  top: 0;
+}
+
+.title h1{
+  font-size: 3ch;
+  color: green;
+}
+
+[type="reset"]{
+  padding: 3px 7px;
+  width: fit-content;
+}
