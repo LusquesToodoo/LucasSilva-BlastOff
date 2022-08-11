@@ -1,0 +1,15 @@
+*:not(body) {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#all-content > ol{
+  margin: auto;
+  padding: 7px 30px 13px 46px;
+  border: solid 1px;
+  width: 290px;
+}
+
+li{
+  padding-left: 13px;
+}
