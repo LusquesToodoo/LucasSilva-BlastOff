@@ -1,0 +1,24 @@
+*:not(body) {
+  margin: 0;
+  padding: 0;
+}
+
+ol{
+  list-style-position: inside;
+}
+
+#all-content{
+  margin: auto;
+  padding: 7px 40px 15px;
+  border: solid 1px;
+  width: fit-content;
+}
+#all-content ol:not(:last-child){
+  margin-bottom: 20px;
+}
+
+#all-content > ol:first-child li::before{
+  content: '';
+  display: inline-block;
+  width: 8px;
+}
