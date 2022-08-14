@@ -114,7 +114,7 @@ li a:hover, p a:hover{
   position: relative;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(#FFDC8A 50%, #FFC027 50%);
+  background-image: linear-gradient(#FFDC8A 60%, #FFC027 40%);
   font-weight: 600;
   cursor: pointer;
 }
@@ -162,6 +162,9 @@ li a:hover, p a:hover{
 .main-right .section-lists{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.main-right .section-lists a{
+  font-weight: 600;
 }
 
 .main-right ul li a{
