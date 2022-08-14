@@ -27,9 +27,8 @@ img{
 #all-content{
   margin: auto;
   padding: 0 25px;
-  height: 100vh;
+  min-height: 100vh;
   width: fit-content;
-
 }
 .courses-container{
   max-width: 1185px;
