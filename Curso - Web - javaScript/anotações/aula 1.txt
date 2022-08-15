@@ -1,0 +1,50 @@
+São Paulo, 15 agosto de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Javascript
+Objetivo: introdução a JS
+
+============================================================================
+Aula 1
+============================================================================
+
+O que é javaScript?
+---
+
+- Uma linguagem de programação de alto nível.
+
+- Auxilia na criação de páginas, junto de HTML e CSS.
+
+- Possui tipagem dinâmica fraca.
+
+- É considerada multiparadifma (OO, imperativo, funcional).
+_______________________________________
+
+Para que serve JS?
+---
+
+- Manipulação de elementos e estilos na página (DOM).
+
+- Criar eventos em uma página.
+
+- Pode ser utilizada no back-end (node.js).
+_______________________________________
+
+O que você vai aprender?
+---
+
+- As diversas utilizações do JavaScript.
+
+- Sintaxe.
+
+- Tipos de dados.
+
+- Estrutura de condição e repetição.
+
+- manipulação de DOM.
+
+- Evenetos do javaScript.
+
+- Particularidades do JS.
+_______________________________________

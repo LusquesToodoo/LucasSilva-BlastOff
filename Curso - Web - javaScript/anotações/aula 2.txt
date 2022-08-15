@@ -1,0 +1,36 @@
+São Paulo, 15 agosto de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Javascript
+Objetivo: introdução a JS
+
+============================================================================
+Aula 2
+============================================================================
+
+O primeiro programa
+---
+- O código em Javascript precisa ser inserido no HTML.
+
+- Então será executado ao carregar a página.
+
+- Vamos criar o nosso primeiro programa.
+_______________________________________
+
+============================================================================
+Aula 3
+============================================================================
+
+Onde podemos inserir o JS?
+---
+- Há três formas de inserir JS em uma página.
+
+- head: linkando um arquivo de scritp.
+
+- body: escrevendo código entre a tags script.
+
+- body: linkando um arquivo script.
+
+- Vamos utilizar cada uma delas.
+_______________________________________
