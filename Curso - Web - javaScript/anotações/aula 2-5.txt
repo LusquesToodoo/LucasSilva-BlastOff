@@ -34,3 +34,20 @@ Onde podemos inserir o JS?
 
 - Vamos utilizar cada uma delas.
 _______________________________________
+
+============================================================================
+Aula 4
+============================================================================
+
+Sobre a linguagem
+---
+- O código é executado de cima para baixo.
+
+- A linguagem é case sensitive.
+
+- Tipagem fraca.
+
+- O ponto e vírcula a cada instrução é opcional.*
+
+- Há comentários para uma linha e múltiplas linhas.
+_______________________________________
