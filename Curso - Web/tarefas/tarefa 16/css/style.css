@@ -284,7 +284,6 @@ p.banner-spot-name{
 }
 .main-categories-right{
   height: 375px;
-  /* border: solid 1px purple; */
   grid-column: 2/5;
 }
 
@@ -314,7 +313,7 @@ p.banner-spot-name{
   padding: 7px 15px;
   border-radius: 5px;
 
-  color: #000;
+  color: #444;
   background-color: #EEEEEE;
 }
 .main-categories-left .check{
@@ -361,6 +360,7 @@ p.banner-spot-name{
 }
 
 .main-purchase-information{
+  border-top: solid 1px transparent;
   height: 330px;
   width: 100%;
   background-color: #F5F5F5;
@@ -454,4 +454,18 @@ p.banner-spot-name{
   bottom: -4px;
   width: 250px;
 }
+.main-purchase-information .app-apparel{
+  margin: auto;
+  margin-bottom: 100px;
+  width: var(--width-global);
+}
+
+.main-products-lists{
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-color: #f009;
+  display: none;
+}
+
 /* End Main */
