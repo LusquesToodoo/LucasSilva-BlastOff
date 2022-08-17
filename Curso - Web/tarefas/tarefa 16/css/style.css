@@ -405,4 +405,53 @@ p.banner-spot-name{
 .container-global figure{
   width: 125px;
 }
+
+.main-purchase-information .container-outside{
+  margin: auto;
+  padding: 0 100px;
+  height: 95px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: flex-end;
+  column-gap: 65px;
+  width: var(--width-global);
+  background-color: #7A858C;
+}
+
+.main-purchase-information .container-outside .app-paragraph, .main-purchase-information .container-outside .app-platform {
+  margin: auto 0;
+}
+.main-purchase-information .container-outside .app-paragraph p{
+  color: #fff;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+
+.main-purchase-information .container-outside .app-paragraph p:last-child{
+  font-size: 1em;
+}
+
+.main-purchase-information .container-outside .app-paragraph p:last-child span{
+  color: #F9F200;
+  font-weight: bolder;
+}
+
+.main-purchase-information .container-outside .app-platform{
+  height: fit-content;
+  display: flex;
+  column-gap: 3px;
+  align-items: center;
+  color: #F9F200;
+  font-weight: bolder;
+}
+.main-purchase-information .container-outside .app-platform figure{
+  height: 40px;
+}
+
+.main-purchase-information .container-outside .app-phone{
+  position: relative;
+  bottom: -4px;
+  width: 250px;
+}
 /* End Main */
