@@ -11,6 +11,7 @@
   box-sizing: border-box;
 }
 
+
 body,
 img, video {
   width: 100%;
@@ -227,7 +228,6 @@ p.banner-spot-name {
   position: absolute;
   left: -6px;
   transform: rotate(45deg);
-  z-index: ;
 }
 
 .price.active + .price::after {
@@ -319,6 +319,12 @@ p.banner-spot-name {
 
   color: #444;
   background-color: #eeeeee;
+  transition: .2s;
+}
+
+.main-categories-left a:hover,
+.main-categories-right a:hover{
+  background-color: #ddd;
 }
 .main-categories-left .check {
   display: flex;
@@ -726,11 +732,17 @@ p.banner-spot-name {
   border: solid 1px #EEEEEE;
   border-bottom: 0;
   border-radius: 5px 5px 0px 0;
-  padding: 5px 10px;
   margin: auto;
+  transition: .6s;
+
+
+  overflow: hidden;
+  height: 0;
+  padding: 0;
 }
 
-.footer details{
+.footer details, label{
+  display: block;
   border-radius: 5px 5px 0px 0;
   border: solid 1px #EEEEEE;
   border-bottom: 0;
@@ -746,16 +758,42 @@ p.banner-spot-name {
 .footer-info-grid{
   margin: auto;
   padding: 10px;
-  height: 500px;
   width: var(--width-global);
-
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.footer-info-grid li{
-  margin-bottom: 5px;
-  font-size: 18px;
+.footer-info-grid{
+  position: relative;
+  /* bottom: -200px; */
+}
+.footer-bottom{
+  padding: 10px 0;
+  margin: auto;
+  color: #999;
+  font-size: 13px;
+}
+
+.footer-bottom a{
+  color: #0033CA;
+}
+
+.footer-bottom div{
+  padding: 10px 75px 0;
+  margin: auto;
+  width: fit-content;
+}
+
+.footer-bottom p{
+  margin: auto;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.footer-info-grid li a, .footer-info-grid li{
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1rem;
   color: #999;
 }
 
@@ -764,3 +802,37 @@ li.footer-ul-title {
   color: #666;
 }
 /* EndFooter*/
+
+.footer .social-media a{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.footer .social-media figure{
+  width: 16px;
+}
+
+#footer-info-grid:checked ~ .footer-info{
+  overflow: hidden;
+  height: 180px;
+  padding: 5px 10px;
+
+}
+
+#footer-info-grid{
+  display: none;
+}
+
+#footer-info-grid + [for="footer-info-grid"] > p::after{
+  display: inline-block;
+  margin-left: 10px;
+  content: url(../images/arrow-top.png);
+}
+
+#footer-info-grid:checked + [for="footer-info-grid"] > p::after{
+  transform: rotate(180deg);
+}
+
+#footer-info-grid:checked ~ .footer-bottom > div{
+  border-top: solid 1px #ddd;
+}
