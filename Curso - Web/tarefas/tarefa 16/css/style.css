@@ -687,6 +687,17 @@ p.banner-spot-name {
   font-size: 16px;
 }
 
+.video-button{
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 13px;
+  background-image: linear-gradient(#8ea2df 1px, #3d4f9d 2px);
+  color: #fff;
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+
 .ad-offer-title, .ad-title{
   display: flex;
   align-items: center;
