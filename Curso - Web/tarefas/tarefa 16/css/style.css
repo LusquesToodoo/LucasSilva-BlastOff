@@ -474,15 +474,36 @@ p.banner-spot-name {
   width: var(--width-global);
 }
 
-.main-products-lists .ad-featured {
-  padding: 0 50px;
-  display: flex;
-  justify-content: space-between;
+.main-products-lists > div{
+  margin-bottom: 30px;
 }
-.main-products-lists .ad-featured-title {
+
+.main-products-lists > div ul{
+  margin-left: 50px
+}
+
+.main-products-lists .ad-featured {
+  display: flex;
+  gap: 20px;
+}
+
+.main-products-lists [class^="ad-"][class$="-title"]{
   margin-bottom: 30px;
   color: #666;
   font-size: 24px;
+}
+
+.main-products-lists [class^="ad-"][class$="-title"] > a{
+  display: inline-block;
+  font-size: 16px;
+  color: #0033CA;
+}
+
+.main-products-lists .ad-featured .spot-price.scratched,
+.main-products-lists .ad-featured .percent-discount,
+.main-products-lists .ad-arremate .spot-price.scratched,
+.main-products-lists .ad-arremate .percent-discount{
+  display: none;
 }
 
 .main-products-lists .main-products-container {
@@ -491,43 +512,110 @@ p.banner-spot-name {
 }
 .main-products-lists .main-products-container .more-information{
   height: 152px;
+  width: 25px;
   display: flex;
   align-items: center;
-  
+}
+.main-products-lists .main-products-container .more-information figure{
+  cursor: pointer;
 }
 .main-products-lists .main-products-container{
   height: fit-content;
   width: fit-content;
 }
-.main-products-lists .ad-featured .spot-image {
+.main-products-lists .spot-image {
   height: 152px;
   width: 152px;
   overflow: hidden;
   border: solid 1px #dadada;
 }
 
-.main-products-lists .ad-featured .spot-image img {
+.main-products-lists .spot-image img {
   height: inherit;
   object-fit: cover;
   object-position: center;
 }
 
-.main-products-lists .ad-featured .spot-name {
+.main-products-lists .spot-name {
   margin: 10px 0;
   color: #444;
   font-size: 1rem;
 }
-.main-products-lists .ad-featured .spot-price {
+.main-products-lists .spot-price {
   display: flex;
   color: #990000;
   font-weight: bolder;
 }
-.main-products-lists .ad-featured .spot-price > span {
+.main-products-lists .spot-price.scratched {
+  width: fit-content;
+  position: relative;
+  margin-bottom: 5px;
+  color: #777;
+
+}
+
+.main-products-lists .spot-price.scratched::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #777;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+}
+
+.main-products-lists .spot-price > .floating-number {
   margin-left: 3px;
   display: inline-block;
   height: inherit;
   font-size: 10px;
   transform: translateY(-10%);
+}
+.main-products-lists .spot-price > .floating-number + .percent-discount {
+  margin-left: 15px;
+  border-radius: 0 5px 5px 0;
+  font-size: 13px;
+  padding: 2px 5px;
+  background-color: #900;
+  color: #fff;
+
+  position: relative;
+}
+.main-products-lists .spot-price > .floating-number + .percent-discount::before {
+  content: '';
+  display: block;
+  height: 13px;
+  width: 13px;
+
+  position: absolute;
+  top: 3px;
+  left: -6px;
+
+  transform: rotate(45deg);
+
+  background-color: inherit;
+}
+
+.main-products-lists .spot-price .info-discount{
+  position: relative;
+  z-index: 1;
+}
+
+.main-products-lists .spot-price-installments{
+  margin-top: 5px;
+  font-size: 13px;
+  color: #900;
+}
+
+.main-products-lists .official-store{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 .main-products-lists .ad-featured-aside {
   position: relative;
@@ -577,4 +665,53 @@ p.banner-spot-name {
   font-size: 16px;
 }
 
+.ad-offer-title, .ad-title{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.ad-offer-title::before{
+  content: url(../images/offer.png);
+}
+
+.ad-arremate.discount .main-spot{
+  display: flex;
+  column-gap: 10px;
+}
+
+.ad-arremate.discount .spot-image{
+  position: relative;
+  overflow: initial;
+}
+
+.ad-arremate.discount .spot-image > p{
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  height: 58px;
+  width: 58px;
+  background-color: #FF4000;
+  display: flex;
+  align-items: center;
+
+
+}
+.ad-arremate.discount .main-spot .spot-name::after{
+  position: relative;
+  top: 2px;
+  left: 5px;
+  content: url(../images/share.png);
+  display: inline-block;
+
+  
+}
+
+.spot-brand{
+  font-size: .8em;
+  margin: 5px 0;
+  color: #666;
+}
 /* End Main */
