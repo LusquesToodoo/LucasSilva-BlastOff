@@ -804,12 +804,13 @@ p.banner-spot-name {
   width: var(--width-global);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  position: relative;
 }
 
-.footer-info-grid{
-  position: relative;
-  /* bottom: -200px; */
+[for="footer-info-grid"] > p{
+  color: #555;
 }
+
 .footer-bottom{
   padding: 10px 0;
   margin: auto;
