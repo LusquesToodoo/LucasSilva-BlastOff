@@ -745,6 +745,8 @@ p.banner-spot-name {
   background-color: #FF4000;
   display: flex;
   align-items: center;
+  
+  z-index: 100;
 
 
 }
