@@ -1,0 +1,21 @@
+São Paulo, 18 agosto de 2022.
+Quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Javascript
+Objetivo: Conceitos de JS
+
+============================================================================
+Aula 5
+============================================================================
+
+Variáveis
+---
+- As variáveis armazenam valores
+
+- Estes valores podem ser utilizados posteriormente.
+
+- No javaScript é possível criar variáveis de 3 formas.
+
+- Podemos mudar o tipo da variável livremente (tipagem fraca)
+_______________________________________

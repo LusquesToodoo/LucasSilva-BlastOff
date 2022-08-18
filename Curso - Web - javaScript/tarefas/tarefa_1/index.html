@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa X</title>
+</head>
+
+<body>
+  <script>
+    const sentenca = [];
+    const nChar = [];
+    const resultado = [];
+
+    sentenca.push(prompt('informe a sua 1° frase:'))
+    sentenca.push(prompt('informe a sua 2° frase:'))
+
+    sentenca.forEach((frase, i) => {
+      nChar.push(frase.length);
+      alert(`Tamanho de "${frase}": ${nChar[i]} caractéres`);
+    })
+
+    if (nChar[0] === nChar[1]) {
+      resultado.push('As duas strings são de tamanhos iguais.');
+      if (sentenca[0] === sentenca[1]) {
+        resultado.push('As duas strings possuêm o mesmo conteúdo.');
+      } else {
+        resultado.push('As duas strings possuêm conteúdos diferentes.');
+      }
+    }
+    else {
+      resultado.push('As duas strings são de tamanhos diferentes.');
+      resultado.push('As duas strings possuêm conteúdos diferentes.');
+    }
+
+    resultado.forEach((resposta) => {
+      alert(resposta)
+    })
+  </script>
+</body>
+
+</html>
