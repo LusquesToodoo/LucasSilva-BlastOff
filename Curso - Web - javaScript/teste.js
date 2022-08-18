@@ -1,38 +1,23 @@
-const sentenca = [];
-const nChar = [];
-const resultado = [];
+let genero = '';
+let resultado = null;
+do {
+  genero = prompt('Informe o seu gênero:\nDigite: "M" - Masculino\nDigite: "F" - Feminino.')
+  genero = genero.toLocaleLowerCase()
+} while ( genero != 'm' && genero != 'f');
 
-console.log('Informe a sua 1° frase:');
-sentenca.push('123');
+do {
+  altura = prompt('Informe a sua altura:')
+  altura = parseFloat(altura)
+} while ( altura <= 0 || typeof(altura) === 'string');
 
-sentensa.push(prompt('informe a sua 1° frase:'))
 
-console.log('Informe a sua 2° frase:');
-sentenca.push('123');
-
-sentenca.forEach((frase, i)=>{
-  nChar.push(frase.length);
-  console.log(`Tamanho de "${frase}": ${nChar[i]} caractéres`);
-})
-
-if (nChar[0] === nChar[1]) {
-  resultado.push('As duas strings são de tamanhos iguais');
-  if (sentenca[0] === sentenca[1]) {
-    resultado.push('As duas strings possuêm o mesmo conteúdo.');
-  } else {
-    resultado.push('As duas strings possuêm conteúdos diferentes.');
-  }
+if (genero == 'm') {
+  resultado = (72.7 * altura) - 58
+  genero = 'masculino'
 }
 else{
-  resultado.push('As duas strings são de tamanhos diferentes.');
-  resultado.push('As duas strings possuêm conteúdos diferentes.');
+  resultado = (62.1 * altura) - 44.7
+  genero = 'feminino'
 }
 
-resultado.forEach((resposta)=>{
-  console.log(resposta)
-})
-/*
-Frases
-São iguais
-Número de carácteres
-*/
+console.log(`O resultado do MMC para uma pessoa do gênero ${genero} com ${altura}m de altura equivale aproximadamente a: ${Math.round(resultado)}`)
