@@ -72,6 +72,8 @@
     valores.unshift(primeiroValor)
 
     alert(`O resultado de ${valores.join(" " + operacao + " ")} = ${resultado}`)
+    alert(Math.round(resultado) % 2 === 0? `${resultado} é par`:`${resultado} é ímpar`)
+    alert(resultado < 0? `${resultado} é negativo`:`${resultado} é positivo`)
 
   </script>
 </body>
