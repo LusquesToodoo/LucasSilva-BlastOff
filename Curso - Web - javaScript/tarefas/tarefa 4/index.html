@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 20</title>
+</head>
+
+<body>
+  <script>
+    function validaValor(descricao, MinValor) {
+      let valor;
+      do {
+        valor = parseFloat(prompt(descricao));
+      } while (valor < MinValor || isNaN(valor));
+      return valor;
+    }
+
+    function infoMulta() {
+      const maxPeso = 50;
+      const ValorMulta = 4;
+      const pesoPescado = validaValor("Informe o peso dos peixes coletados por você em Kg:", 0);
+      const excessoPeso = Math.round(pesoPescado - maxPeso);
+      const multa = excessoPeso * ValorMulta
+
+      alert(
+        excessoPeso < 1 ?
+          `A multa só é aplicada para pesos maiores que ${maxPeso}kg, e você pescou ${pesoPescado}Kg.\nNão há valor de multa a ser paga.` :
+          `O peso máximo pescado equivale a ${maxPeso}Kg, você pescou o total de ${pesoPescado}Kg, passando aproximadamente ${excessoPeso}Kg do máximo estipulado.\nSua multa será de R$ ${multa},00.`
+      );
+    }
+
+    infoMulta();
+  </script>
+</body>
+
+</html>

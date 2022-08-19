@@ -1,33 +1,23 @@
-const toodoo = {
-  "id_empresa": "Toodoo",
-  "cidade": [
-    "Santa Rita do Sapucaí-MG",
-    "São Paulo-SP"
-  ],
-  "telefone": 12345678,
-  "funcionarios": [
-    {
-      "id_funcionario": 1,
-      "nome": "Flavio",
-      "dependente": {
-        "id_dependente": 1,
-        "nome": "Vânia"
-      }
-    },
-    {
-      "id_funcionario": 2,
-      "nome": "João",
-      "dependente":{
-        "id_dependente": 1,
-        "nome": "Joaquim"
-      }
-    }
-  ]
-};
+function validaValor(descricao, MinValor) {
+  let valor;
+  do {
+    valor = parseFloat(prompt(descricao));
+  } while (valor >= MinValor);
+  return valor;
+}
 
-toodoo["endereco"] = [];
-toodoo["endereco"].push({"São Paulo": "Rua Guaipa, 51 CJ 208 e 209,  Office Vila Rossi, Vila Leopoldina, SP"})
-toodoo["endereco"].push({"Santa Rita":"Rua Hum, 72, Familia Andrade, Santa Rita do Sapucaí, MG"})
+function infoMulta() {
+  const maxPeso = 50;
+  const multa = 4;
+  const pesoPeixe = validaValor(40);
+  const excessoPeixe = pesoPeixe - maxPeso;
 
-console.log('Objeto final');
-console.log(toodoo);
+  console.log(excessoPeixe);
+  if (excessoPeixe < 1) {
+    console.log(
+      `A multa só é aplicada para pesos maiores que ${maxPeso}kg, e você pescou ${pesoPeixe}.\nNão há multas há multa a ser paga.`,
+    );
+  }
+}
+
+infoMulta();
