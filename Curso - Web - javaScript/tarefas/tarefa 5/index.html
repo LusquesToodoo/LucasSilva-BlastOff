@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 21</title>
+</head>
+
+<body>
+  <script>
+    function validaValor(descricao, operacao) {
+      let valor;
+      do {
+        valor = parseFloat(prompt(descricao));
+      } while (isNaN(valor));
+
+      if (operacao === '/' && Math.ceil(valor) === 0) {
+        console.log(Math.ceil(valor))
+        valor = validaValor("ERRO!\nNa operação de divisão, não é possível dividir por 0.\nPor favor, escolha outro número.", operacao)
+      }
+      return valor;
+    }
+
+    let valores = [];
+    let quantValores;
+    let operacao = '';
+
+    do {
+      operacao = prompt("Informe o tipo de opereção que deseja fazer:\n[ + ] para soma\n[ - ] para subtração\n[ * ] para multiplicação\n[ / ] para razão")
+    } while (operacao != '+' && operacao != '-' && operacao != '*' && operacao != '/');
+    
+    do {
+      quantValores = parseInt(prompt("Informe quantos valores gostaria de operar (min: 2 | max: 10):"));
+    } while (quantValores < 2 || quantValores > 10 || isNaN(quantValores));
+
+    for (let i = 0; i < quantValores; i++) {
+      valores.push(validaValor(`Informe o ${i + 1}° valor que deseja usar na sua operação: `, operacao))
+    }
+
+    const primeiroValor = valores[0]
+    let resultado = valores.shift()
+
+    switch (operacao) {
+      case '+':
+        valores.forEach((valor) => {
+          resultado += valor
+        })
+        break;
+
+      case '-':
+        valores.forEach((valor) => {
+          resultado -= valor
+        })
+        break;
+
+      case '*':
+        valores.forEach((valor) => {
+          resultado *= valor
+        })
+        break;
+
+      case '/':
+        valores.forEach((valor) => {
+          resultado /= valor
+        })
+        break;
+    }
+
+    valores.unshift(primeiroValor)
+
+    alert(`O resultado de ${valores.join(" " + operacao + " ")} = ${resultado}`)
+
+  </script>
+</body>
+
+</html>
