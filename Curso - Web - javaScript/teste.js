@@ -1,23 +1,33 @@
-let genero = '';
-let resultado = null;
-do {
-  genero = prompt('Informe o seu gênero:\nDigite: "M" - Masculino\nDigite: "F" - Feminino.')
-  genero = genero.toLocaleLowerCase()
-} while ( genero != 'm' && genero != 'f');
+const toodoo = {
+  "id_empresa": "Toodoo",
+  "cidade": [
+    "Santa Rita do Sapucaí-MG",
+    "São Paulo-SP"
+  ],
+  "telefone": 12345678,
+  "funcionarios": [
+    {
+      "id_funcionario": 1,
+      "nome": "Flavio",
+      "dependente": {
+        "id_dependente": 1,
+        "nome": "Vânia"
+      }
+    },
+    {
+      "id_funcionario": 2,
+      "nome": "João",
+      "dependente":{
+        "id_dependente": 1,
+        "nome": "Joaquim"
+      }
+    }
+  ]
+};
 
-do {
-  altura = prompt('Informe a sua altura:')
-  altura = parseFloat(altura)
-} while ( altura <= 0 || typeof(altura) === 'string');
+toodoo["endereco"] = [];
+toodoo["endereco"].push({"São Paulo": "Rua Guaipa, 51 CJ 208 e 209,  Office Vila Rossi, Vila Leopoldina, SP"})
+toodoo["endereco"].push({"Santa Rita":"Rua Hum, 72, Familia Andrade, Santa Rita do Sapucaí, MG"})
 
-
-if (genero == 'm') {
-  resultado = (72.7 * altura) - 58
-  genero = 'masculino'
-}
-else{
-  resultado = (62.1 * altura) - 44.7
-  genero = 'feminino'
-}
-
-console.log(`O resultado do MMC para uma pessoa do gênero ${genero} com ${altura}m de altura equivale aproximadamente a: ${Math.round(resultado)}`)
+console.log('Objeto final');
+console.log(toodoo);
