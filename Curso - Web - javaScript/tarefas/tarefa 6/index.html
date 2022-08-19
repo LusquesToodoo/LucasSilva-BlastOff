@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 22</title>
+</head>
+
+<body>
+  <script>
+    let nota1;
+    let nota2;
+    let conceito;
+    let estado = 'APROVADO'
+
+    do {
+      nota1 = parseFloat(prompt("Informe a sau 1° nota (0 à 10):"))
+    } while (nota1 < 0 || nota1 > 10 || isNaN(nota1));
+
+    do {
+      nota2 = parseFloat(prompt("Informe a sau 2° nota (0 à 10):"))
+    } while (nota2 < 0 || nota2 > 10 || isNaN(nota2));
+
+    const media = (nota1 + nota2) / 2
+
+    if (media >= 9) {
+      conceito = "A"
+    } else if (media >= 7.5) {
+      conceito = "B"
+    } else if (media >= 6) {
+      conceito = "C"
+    } else if (media >= 4) {
+      conceito = "D"
+      estado = 'REPROVADO'
+    } else {
+      conceito = "E"
+      estado = 'REPROVADO'
+    }
+
+    alert(`Nota 1:   ${nota1} ;\n\nNota 2:   ${nota2} ;\n\nMedia:   ${media} ;\n\nConceito:   ${conceito} ;\n\nSituação:   ${estado} ;`)
+
+  </script>
+</body>
+
+</html>
