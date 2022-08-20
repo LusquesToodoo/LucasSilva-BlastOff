@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 23</title>
+</head>
+
+<body>
+  <script>
+    function mostraIdades(){
+      let texto = '';
+      idades.forEach((idade, i)=>{
+        texto += `\nIdade da ${i+1}° pessoa da turma: ${idade} ano(s).\n---`
+      })
+      return texto;
+    }
+
+    function validaValor(descricao, MinValor, maxValor) {
+      let valor;
+      do {
+        valor = parseFloat(prompt(descricao));
+        maxValor? maxValor : valor - 1;
+      } while (valor < MinValor || isNaN(valor) || valor > maxValor);
+      return valor;
+    }
+
+    let idades = [];
+    let acumuladorIdade = 0;
+    let adjetivoTurma = '';
+    const quantIdades = Math.round(validaValor("Informe quantas pessoas serão entrevistadas (min: 1 | max: 10): ", 1, 10));
+
+    for (let i = 0; i < quantIdades; i++) {
+      idades.push(validaValor(`Informe a idade do seu ${i+1}° entrevistado: `, 0));
+      acumuladorIdade += idades[i]
+    }
+
+    const mediaIdade = acumuladorIdade / quantIdades
+
+  if (mediaIdade >=  60) {
+    adjetivoTurma = 'idosas'
+  } else if(mediaIdade > 25) {
+    adjetivoTurma = 'adultas'
+  } else{
+    adjetivoTurma = 'jovens'
+  }
+
+  alert(`A média de idades da turma é de ${mediaIdade} anos de idade.\nA turma é constituida por pessoas ${adjetivoTurma}.\nIdades informadas:\n ${mostraIdades()}`)
+
+  </script>
+</body>
+
+</html>
