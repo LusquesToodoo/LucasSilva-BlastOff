@@ -14,7 +14,6 @@ class Client {
   }
   createRow = function (isSelected) {
     const units = ["", "", "m", "Kg"];
-    1;
     let i = 0;
     let row = isSelected ? "" : "<tr>";
     for (const key in this) {
@@ -49,7 +48,6 @@ function validaValor(descricao, MinValor, maxValor) {
   let valor;
   do {
     valor = parseFloat(prompt(descricao));
-    maxValor ? maxValor : valor - 1;
   } while (valor < MinValor || isNaN(valor) || valor > maxValor);
   return valor;
 }
@@ -59,7 +57,7 @@ function validaId(id) {
   let existente;
   clients.forEach((client) => {
     if (client.id === id) {
-      alert("ERRO! Esse id já foi registrado! Tende novamente!");
+      alert("ERRO! Esse id já foi registrado! Tente novamente!");
       existente = true;
     }
   });
