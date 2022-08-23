@@ -1,0 +1,66 @@
+São Paulo, 22 agosto de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Javascript
+Objetivo: Conceitos de JS
+
+============================================================================
+Aula 28
+============================================================================
+[
+  createElemento
+  ---
+  Esse método Document.createElement() cria um elemento HTML especificado ou um
+  HTMLUnknownElement caso o nome do elemento dado não seja reconhecido.
+  Em outros documentos, ele cria um elemento com um namespace URI null.
+
+  sintaxe:
+    var elemento = document.createElement(nomeDaTag);
+    --
+    elemento -> é o objeto Element criado.
+    nomeDaTag -> é uma string que especifica o tipo do elemento a ser criado. O nodeName
+    do elemento criado é inicializado com o valor da nomeDaTag. Não use nomes qualificados
+    (como "html:a") com este método.
+  _______________________________________
+
+  createTextNode
+  ---
+  Cria um novo texto node. Este método pode ser usado para escapar caracteres HTML.
+
+  sintaxe:
+    createTextNode(data)
+    --
+    data -> Uma string contendo os dados a serem colocados no nó de texto.
+  _______________________________________
+
+  appendChild
+  ---
+  Adiciona um node ao final da lista de filhos de um node pai especificado. Se o node já existir
+  no documento, ele é removido de seu node pai atual antes de ser adicionado ao novo pai.
+  Para ser usado corretamente é necessário que o elemento filho seja um elemendo node (um nó).
+
+  sintaxe:
+    var filho = elemento.appendChild(filho);
+    --
+    elemento -> node pai.
+    filho -> node que vai ser adicionado como filho de 'elemento'.
+  _______________________________________
+]
+
+toFixed
+---
+O método toFixed() formata um número utilizando notação de ponto fixo.
+
+sintaxe:
+  numObj.toFixed([dígitos])
+  --
+  digítos -> Opcional. O número de dígitos que aparecem depois do ponto decimal;
+  este pode ser um valor entre 0 e 20, inclusive, e algumas implementacões podem
+  suportar uma variação de números maiores. Se este argumento for omitido, será
+  tratado como 0. Retorna o conteúdo da string no intervalo dos dígitos passados.
+_______________________________________
+
+ ============================================================================
+ Aula 29
+ ============================================================================

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 25</title>
+</head>
+
+<body>
+  <script>
+    function validateInput(description, minLetters) {
+
+      function validateDay(dateDay, lastDay, dateMonth, dateYear) {
+        let answer;
+        if (dateDay > lastDay) {
+          answer = `O mês de ${month[dateMonth - 1]} não tem dia ${dateDay}!!!`
+          if (dateMonth == 2 && lastDay == 28) {
+            answer += `\n${dateYear} não é um ano bissexto.`
+          }
+        }
+        return answer
+      }
+
+      function leapYear(dateYear) {
+        return dateYear % 4 == 0 ? 29 : 28;
+      }
+
+      let date, answerError, answer;
+      date = prompt(description);
+      if (date.length < minLetters) {
+        return 'ERRO! Data declarada inválida! Informe a data no seguinte modelo: dd/mm/aaaa';
+      } else {
+        const words = date.split(' ');
+        const vetorDates = [];
+        words.forEach((dateString) => {
+          const currentDate = dateString.split('/');
+          dateString.length == minLetters && currentDate.length == 3
+            && !!parseInt(currentDate[0]) && currentDate[0].length == 2 && parseInt(currentDate[0]) >= 1 && parseInt(currentDate[0]) <= 31
+            && !!parseInt(currentDate[1]) && currentDate[1].length == 2 && parseInt(currentDate[1]) >= 1 && parseInt(currentDate[1]) <= 12
+            && !!parseInt(currentDate[2]) && currentDate[2].length == 4 && parseInt(currentDate[2]) >= 0 ?
+            vetorDates.push(currentDate) : '';
+        })
+
+        if (!vetorDates.length) {
+          return 'ERRO! Não foram encontradas datas válidas!\nInforme uma ou mais datas no seguinte modelo: dd/mm/aaaa';
+        }
+
+        vetorDates.forEach((fullDate) => {
+          answerError = ''
+          let dateDay = parseInt(fullDate[0])
+          let dateMonth = parseInt(fullDate[1])
+          let dateYear = parseInt(fullDate[2])
+
+          switch (dateMonth) {
+            case 2:
+              answerError = validateDay(dateDay, leapYear(dateYear), dateMonth, dateYear)
+              break;
+            case 4:
+              answerError = validateDay(dateDay, 30, dateMonth)
+              break;
+            case 6:
+              answerError = validateDay(dateDay, 30, dateMonth)
+              break;
+            case 9:
+              answerError = validateDay(dateDay, 30, dateMonth)
+              break;
+            case 11:
+              answerError = validateDay(dateDay, 30, dateMonth)
+              break;
+          }
+          answerError ? inputErrors.push(`${answerError}\n\n Status: NULL;`) : inputErrors.push(`${fullDate.join('/')} é uma data válida!\n\n Status: Ok;`);
+          fullDate[1] = month[dateMonth - 1];
+        })
+
+        return vetorDates;
+      }
+    }
+
+    const month = [
+      "Janeiro",
+      "Fevereiro",
+      "Março",
+      "Abril",
+      "Maio",
+      "Junho",
+      "Julho",
+      "Agosto",
+      "Setembro",
+      "Outubro",
+      "Novembro",
+      "Dezembro",
+    ];
+    const inputErrors = [];
+    let input;
+    do {
+      input = validateInput('Informe a data que deseja ler por extenso (dd/mm/aaaa):', 10);
+      if (Array.isArray(input)) {
+        break;
+      }
+      alert(input)
+    } while (true);
+
+    input.forEach((data, i) => {
+      data.splice(1, 0, 'de')
+      data.splice(3, 0, 'de')
+      alert(`${i + 1}° data informada: ${data.join(' ')};\n${inputErrors[i]}`)
+    })
+
+
+
+
+  </script>
+</body>
+
+</html>
+
+<!-- function apenasNumeros(string)
+{
+var numsStr = string.replace(/[^0-9]/g,'');
+return parseInt(numsStr);
+}
+
+apenasNumeros('Aqui está um exemplo de string que só pegará os valores ! 10/10/1010') -->

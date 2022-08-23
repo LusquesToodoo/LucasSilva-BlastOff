@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 25</title>
+</head>
+
+<body>
+  <script>
+    function validaInput(descricao, erroMsg, MinValor, maxValor) {
+      let valor, segundaChance;
+      do {
+        if (segundaChance) {
+          valor = prompt(erroMsg + '\n' + descricao);
+        }
+        else{
+          valor = prompt(descricao);
+          segundaChance = true;
+        }
+      } while (valor.length < MinValor || valor.length > maxValor);
+      validaDatas(valor)
+      return valor;
+    }
+
+    function validaDatas(data) {
+      let dataValida;
+      const dataSplit = data.split('/')
+      dataSplit.forEach((element, i) => {
+        switch (i) {
+          case 0:
+            dataValida = !(element.length != 2 && isNaN(parseInt(element)))
+            break;
+          case 1:
+            dataValida = !(element.length != 2 && isNaN(parseInt(element)))
+            break;
+          case 2:
+            dataValida = !(element.length != 4 && isNaN(parseInt(element)))
+            break;
+          case 3:
+            dataValida = true;
+            break
+        }
+      });
+      console.log(dataSplit[0], dataSplit[1], dataSplit[2])
+    }
+    const month = [
+      "Janeiro",
+      "Fevereiro",
+      "Março",
+      "Abril",
+      "Maio",
+      "Junho",
+      "Julho",
+      "Agosto",
+      "Setembro",
+      "Outubro",
+      "Novembro",
+      "Dezembro",
+    ];
+
+    const date = validaInput('Informe a data que deseja ler por extenso no seguinte formato (dd/mm/aaaa):','ERRO! INFORME UMA DATA VÁLIDA!', 10, 10)
+    alert(date)
+  </script>
+</body>
+
+</html>
