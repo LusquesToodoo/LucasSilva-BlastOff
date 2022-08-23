@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 26</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    #list {
+      border: solid 1px #bbb;
+      list-style: none;
+      min-width: 350px;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    #list li {
+      background-color: #eee;
+      padding: 2.5px 10px;
+    }
+    
+    #list li:nth-child(2n) {
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="list">
+
+  </ul>
+  <script>
+    class Month {
+      constructor(month, temperature) {
+        this.month = month;
+        this.temperature = temperature
+      }
+    }
+
+    function validaValor(descricao, MinValor, maxValor) {
+      let valor;
+      let segundaChance;
+      do {
+        if (segundaChance) {
+          alert('O menor valor possível na escala de Ceusius(°C) é de -273.15°C!')
+        }
+        valor = parseFloat(prompt(descricao));
+        segundaChance = true
+      } while (valor < MinValor || isNaN(valor) || valor > maxValor);
+      return valor;
+    }
+
+    let accountTemperature = 0;
+
+    const month = [
+      "Janeiro",
+      "Fevereiro",
+      "Março",
+      "Abril",
+      "Maio",
+      "Junho",
+      "Julho",
+      "Agosto",
+      "Setembro",
+      "Outubro",
+      "Novembro",
+      "Dezembro",
+    ];
+    const temperature = []
+    const list = document.querySelector('#list')
+    month.forEach((month, i) => {
+      temperature.push(validaValor(`Informe a temperatura em Celsius (°C) do mês de ${month} (somente números): `, - 273.15));
+      accountTemperature += temperature[i]
+    });
+
+    const averageTemperature = accountTemperature / 12;
+
+    month.forEach((month, i) => {
+      const li = `<li>${i+1} - ${month}: ${temperature[i]}°C</li>`
+      list.insertAdjacentHTML('beforeend', li)
+    });
+    list.insertAdjacentHTML('beforeend', `<li class="average">Temperatura média: ${Math.round(averageTemperature)}°C</li>`)
+    
+  </script>
+</body>
+
+</html>
+
+<!-- function apenasNumeros(string)
+{
+var numsStr = string.replace(/[^0-9]/g,'');
+return parseInt(numsStr);
+}
+
+apenasNumeros('Aqui está um exemplo de string que só pegará os valores ! 10/10/1010') -->
