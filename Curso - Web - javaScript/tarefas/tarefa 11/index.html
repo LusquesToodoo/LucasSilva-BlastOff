@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 27</title>
+</head>
+
+<body>
+  <script>
+    function validaValor(descricao, MinValor, maxValor) {
+      let valor;
+      do {
+        valor = parseFloat(prompt(descricao));
+      } while (valor < MinValor || isNaN(valor) || valor > maxValor);
+      return valor;
+    }
+
+    function printTriangle(value) {
+      let row = '';
+      for (let i = 0; i <= value; i++) {
+        row += ` ${i}`;
+        console.log(row)
+      }
+    }
+
+    printTriangle(
+      parseInt(
+        validaValor('Informe quantas linhas gostaria de imprimir no seu triângulo retângulo (min: 0; max: 50): ', 0, 50)
+      )
+    );
+    alert('Resultado no console!')
+  </script>
+</body>
+
+</html>
