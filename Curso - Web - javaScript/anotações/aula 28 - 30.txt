@@ -61,6 +61,11 @@ sintaxe:
   tratado como 0. Retorna o conteúdo da string no intervalo dos dígitos passados.
 _______________________________________
 
- ============================================================================
- Aula 29
- ============================================================================
+============================================================================
+Aula 29
+============================================================================
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/trim
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/splice

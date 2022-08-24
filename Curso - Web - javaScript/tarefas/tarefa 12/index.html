@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 28</title>
+</head>
+
+<body>
+  <script>
+    function validateCPF(description) {
+      let value = justNumbers(prompt(description));
+      while (value.length != 11) {
+        value = justNumbers(prompt(`CPF INVÁLIDO!\n${description}`));
+      }
+      const digits = value.replace(/([0-9]{2}$)/, '')
+      const checker = value.replace(/(^[0-9]{9})/, '')
+
+      return validateDigits(digits, checker)
+    }
+    function justNumbers(string) {
+      input = string
+      const regexKey = /[^0-9]/g;
+      let numbers = string.replace(regexKey, "");
+      return numbers;
+    }
+    function validateDigits(digits, checker) {
+
+      function validate(vector, valueInit) {
+        let accumulator = 0;
+        vector.forEach((digit, i) => {
+          accumulator += parseInt(digit) * (valueInit - i)
+        });
+        return accumulator;
+      }
+      function validateLaftover(value) {
+        const laftover = ((value * 10) % 11);
+        return laftover == 10 ? 0 : laftover;
+      }
+
+      const digitsVector = digits.split('')
+      let accumulatorDigits = validate(digitsVector, 10);
+      let laftover = validateLaftover(accumulatorDigits);
+
+      if (laftover != checker[0]) {
+        return
+      } else {
+        digitsVector.push(checker[0])
+      }
+
+      accumulatorDigits = validate(digitsVector, 11);
+      laftover = validateLaftover(accumulatorDigits);
+      if (laftover != checker[1]) {
+        return
+      } else {
+        return true
+      }
+    }
+
+    function validateChar(input) {
+      const limaozinho = !!justChar(input)
+      return !!justChar(input)
+    }
+    function justChar(string) {
+      let retorno;
+      const regexKey = /([0-9]{3}|[0-9]{2}$)/g;
+      const char = string.replace(regexKey, '').split('');
+      char.forEach((Char, i) => {
+        switch (i) {
+          case 0:
+            if (Char != '.') {
+              retorno = true
+            }
+            break;
+          case 1:
+            if (Char != '.') {
+              retorno = true
+            }
+            break;
+          case 2:
+            if (Char != '-') {
+              retorno = true
+            }
+            break;
+          default:
+            retorno = true
+            break;
+        }
+      })
+      return !!retorno
+    }
+
+    let input;
+    const cpf = validateCPF("Informe o seu CPF (xxx.xxx.xxx-xx): ");
+
+    if (cpf) {
+      console.log('Este CPF é válido!')
+      const char = validateChar(input)
+      if (char) {
+        console.log('Porém os caractéres de formatação são inválidos!')
+      }else{
+        console.log('Caractéres informados de maneira correta!')
+
+      }
+    }
+    else {
+      console.log('CPF INVÁLIDO!')
+    }
+
+    alert('Resposta no console!')
+
+  </script>
+</body>
+
+</html>

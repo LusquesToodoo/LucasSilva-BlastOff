@@ -1,21 +1,23 @@
-function validaValor(descricao, MinValor, maxValor) {
-  let valor;
-  do {
-    valor = parseFloat(prompt(descricao));
-  } while (valor < MinValor || isNaN(valor) || valor > maxValor);
-  return valor;
+const input = '123.321.123-35'
+
+console.log(input.replace(/[^0-9]/g,''))
+//------------------------------------------
+
+// const cpf = '364.231.487-24'
+// // const ExpReg = /(\d{3})(\W)(\d{3})(\W)(\d{3})/g
+// const ExpReg = /(\d{3})(\W)(\d{3})(\W)(\d{3})(\W)(\d{2})/
+// // const obj = ExpReg.exec(cpf)
+// const obj = ExpReg.match(cpf)
+// obj.forEach((a)=>{
+//   console.log(a)
+// })
+
+//------------------------------------------
+function apenasNumeros(string)
+{
+var numsStr = string.replace(/[^0-9]/g,'');
+return parseInt(numsStr);
 }
 
-function printTriangle(value) {
-  let row = '';
-  for (let i = 0; i <= value; i++) {
-    row += ` ${i}`;
-    console.log(row)
-  }
-}
 
-printTriangle(
-  parseInt(
-    validaValor('Informe quantas linhas gostaria de imprimir no seu triângulo retângulo (min: 0; max: 50): ', 0, 50)
-    )
-  );
+console.log(apenasNumeros('Aqui está um exemplo de string que só pegará os valores ! 10/10/1010'))
