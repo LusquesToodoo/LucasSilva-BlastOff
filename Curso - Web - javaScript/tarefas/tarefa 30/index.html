@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 30</title>
+</head>
+
+<body>
+  <script>
+    class BombaCombustivel {
+      constructor(type, value, quantity) {
+        this.tipoCombustivel = type;
+        this.valorLitro = value;
+        this.quantidadeCombustivel = quantity;
+      }
+
+      atualizaQuantidade(quantity) {
+        this.quantidadeCombustivel -= quantity;
+        return true;
+      }
+
+      displayBomba(checked, quantity, value) {
+        if (checked) {
+          console.log(`Abastecimento concluído!\nO valor de ${quantity}L de gasolina ${this.tipoCombustivel} equivale a R$ ${value}.`);
+        } else {
+          console.log(`Infelizmente o abastecimento não pode ser concluído.\nQuantidade de gasolina disponível: ${this.quantidadeCombustivel}L\nQuantidade solicitada: ${quantity}L`);
+        }
+      }
+
+      abastecerPorValor = (value) => {
+        const quantity = value * this.valorLitro;
+        const checked = quantity <= this.quantidadeCombustivel ? this.atualizaQuantidade(quantity) : false;
+        checked ? this.displayBomba(checked, quantity, value) : '';
+      }
+
+      abastecerPorLitro = (quantity) => {
+        const value = quantity / this.valorLitro;
+        const checked = quantity <= this.quantidadeCombustivel ? this.atualizaQuantidade(quantity) : false;
+        checked ? this.displayBomba(checked, quantity, value) : '';
+      }
+
+      alterarValor = (value) => {
+        this.valorLitro = value;
+      }
+
+      alterarCombustivel = (type) => {
+        this.tipoCombustivel = type;
+      }
+
+      alterarQuantidadeCombustivel = (quantity) => {
+        this.quantidadeCombustivel = quantity;
+      }
+    }
+
+    function input(description) {
+      return prompt(description)
+    }
+
+    function validateValue(description, MinValue, maxValue) {
+      let value = parseFloat(input(description));
+      while (value < MinValue || isNaN(value) || value > maxValue) {
+        value = input(`Informe um número entre ${MinValue} e ${maxValue || 'qualquer valor'}.\n`)
+      }
+      return value;
+    }
+
+    const bomba = new BombaCombustivel('Aditivada', 2, 100)
+    console.log(bomba)
+    alert('Informações do objeto no console.')
+  </script>
+</body>
+
+</html>
