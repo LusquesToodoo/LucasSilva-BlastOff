@@ -51,6 +51,8 @@
     const width = validateValue('Informe a largura do retângulo (m): ', 0)
     const retangulo = new Retangulo(height, width)
 
+    alert('Informações no console')
+
     console.log(`Nome do objeto criado: retangulo`)
     console.log(`Atriburos do objeto:`)
     console.log(`retangulo.height - armazena o valor da altura do objeto`)
@@ -64,6 +66,12 @@
     console.log(`retangulo.getWidth() - metodo getter que retorna largura definida.`)
     console.log(`retangulo.calculatePerimeter - metodo que calcula área em metro². Usa os valores atuais dos atributos do objeto para fazer os cálculos.`)
     console.log(`retangulo.calculateArea() - metodo que calcula perímetro do retângulo e retornar valor em metros. Usa os valores atuais dos atributos do objeto para fazer os cálculos.`)
+    
+    console.log(`\n`)
+
+    console.log(`área total: ${retangulo.height} * ${retangulo.width} = ${retangulo.calculateArea()}`)
+    console.log(`perímetro total: 2(${retangulo.height}) + 2(${retangulo.width}) = ${retangulo.calculatePerimeter()}`)
+
 
 
   </script>
