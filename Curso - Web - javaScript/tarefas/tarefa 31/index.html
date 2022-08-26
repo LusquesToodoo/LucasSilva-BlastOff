@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="https://github.com/Lusques">
+  <title>Tarefa 31</title>
+  <style>
+    #all-content {
+      margin: 50px auto;
+      max-width: fit-content;
+    }
+
+    #search {
+      height: 21px;
+      width: 250px;
+    }
+
+    .ol {
+      list-style: disc;
+      font-size: 1.25em;
+    }
+
+    .ol>li.active {
+      font-weight: bolder;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="all-content">
+    <label for="search">
+      <input id="search" type="text">
+    </label>
+    <ol class="ol">
+      <li>João</li>
+      <li>Claudio</li>
+      <li>Marcio</li>
+    </ol>
+  </section>
+  <script>
+    function searchMarkerItem() {
+      let value = input.value.toLowerCase()
+      const list = document.querySelectorAll('.ol > li')
+      const listActiveOld = document.querySelectorAll('li.active');
+      listActiveOld.forEach((item) => {
+        item.classList.remove('active')
+      })
+
+      if (value == '') {
+        return
+      }
+      
+      const listActiveCurrent = []
+      list.forEach((item) => {
+        (item.textContent.toLowerCase().indexOf(value) != -1) ? listActiveCurrent.push(item) : '';
+      })
+      
+      listActiveCurrent.forEach((item)=>{
+        item.classList.add('active')
+      })
+
+    }
+
+    const input = document.querySelector('#search')
+    input.addEventListener('keyup', searchMarkerItem)
+  </script>
+</body>
+
+</html>

@@ -1,48 +1,34 @@
-class BombaCombustivel {
-  constructor(type, value, quantity) {
-    this.tipoCombustivel = type;
-    this.valorLitro = value;
-    this.quantidadeCombustivel = quantity;
+const nomes = ['joão', 'claudio', 'marcios']
+const input = 'o'
+const selecionado = nomes.filter((nome)=>{
+  if (nome.indexOf(input) != -1) {
+    return nome
   }
+})
 
-  atualizaQuantidade(quantity) {
-    this.quantidadeCombustivel -= quantity;
-    return true;
-  }
+console.log(nomes)
+console.log(selecionado)
 
-  displayBomba(checked, quantity, value){
-    if (checked) {
-      console.log(`Abastecimento concluído!\nO valor de ${quantity}L de gasolina ${this.tipoCombustivel} equivale a R$ ${value}.`);
-    } else {
-      console.log(`Infelizmente o abastecimento não pode ser concluído.\nQuantidade de gasolina disponível: ${this.quantidadeCombustivel}L\nQuantidade solicitada: ${quantity}L`);
-    }
-  }
 
-  abastecerPorValor = (value)=> {
-    const quantity = value * this.valorLitro;
-    const checked = quantity <= this.quantidadeCombustivel ? this.atualizaQuantidade(quantity) : false;
-    checked ? this.displayBomba(checked, quantity, value) : '';
-  }
 
-  abastecerPorLitro = (quantity)=> {
-    const value = quantity / this.valorLitro;
-    const checked = quantity <= this.quantidadeCombustivel ? this.atualizaQuantidade(quantity) : false;
-    checked ? this.displayBomba(checked, quantity, value) : '';
-  }
+---
+function searchMarkerItem() {
+  let value = input.value;
+  const listActiveOld = document.querySelectorAll('li.active');
 
-  alterarValor = (value)=> {
-    this.valorLitro = value;
-  }
+  listActiveOld.forEach((item) => {
+    item.classList.remove('active');
+  });
 
-  alterarCombustivel = (type) => {
-    this.tipoCombustivel = type;
-  }
+  const listActiveCurrent = list.filter((item) =>{
 
-  alterarQuantidadeCombustivel = (quantity)=> {
-    this.quantidadeCombustivel = quantity;
-  }
+  })
+
+  list.forEach((item) => {
+    const selected = searchListItem(value);
+  })
 }
 
-const bomba = new BombaCombustivel('Aditivada', 2, 100)
-
-console.log(bomba.)
+const input = document.querySelector('#search');
+const list = document.querySelectorAll('.ol > li');
+input.addEventListener('keyup', searchMarkerItem);
