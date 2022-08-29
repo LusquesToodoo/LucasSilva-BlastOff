@@ -1,0 +1,21 @@
+São Paulo, 29 agosto de 2022.
+Segunda-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Javascript
+Objetivo: Conceitos de JS
+
+============================================================================
+Aula 45
+============================================================================
+Callback functions
+---
+- A função de callback é um recurso muito interessante e também amplamente utilizado em JS;
+
+- Permite executar uma função depois de uma determinada ação;
+
+- Conceito fundamental para entender a parte assíncrona do JS;
+
+Callback trata-se de uma função que é passada como parâmetro de outra função, e que executa uma ação
+com os parametrôs da função original.
+_______________________________________
