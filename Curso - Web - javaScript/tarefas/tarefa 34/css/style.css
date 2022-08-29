@@ -23,6 +23,13 @@ td {
   padding: 5px 15px;
   text-align: center;
 }
+td{
+  width: 150px;
+}
+
+td[empy]{
+  background-color: #7379f199;
+}
 th {
   background-color: #FB798D;
   color: #fff;

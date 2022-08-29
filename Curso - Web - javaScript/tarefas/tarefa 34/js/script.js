@@ -34,10 +34,9 @@ button.addEventListener("click", () => {
     alert("O valor máximo deve ser maior que o valor mínimo!");
     return;
   }
-  debugger;
   for (let i = valueMin; i <= valueMax; i++) {
     if (i % 2 === 0 || i % 3 === 0) {
-      row += `<tr><td>${i % 2 === 0 ? i : "x"}</td><td>${i % 3 === 0 ? i : "x"}</td></tr>`;
+      row += `<tr><td${i % 2 === 0 ? ('>' + i ): " empy > -"}</td><td${i % 3 === 0 ? ('>' + i ): " empy > -"}</td></tr>`;
     }
   }
   row += `</tbody>`;
