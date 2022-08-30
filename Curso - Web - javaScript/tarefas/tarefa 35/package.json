@@ -1,0 +1,12 @@
+{
+  "name": "tarefa-35",
+  "version": "1.0.0",
+  "description": "Planilha Kanban desenvolivda por https://github.com/Lusques",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass:css"
+  },
+  "author": "https://github.com/Lusques",
+  "license": "MIT"
+}
