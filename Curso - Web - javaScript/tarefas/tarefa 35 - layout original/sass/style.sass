@@ -74,47 +74,53 @@ $text-color-light: #fff
           padding-left: 20px
           transition: .6s
           width: 480px
-          
-        &.complete
-          background: $bg-purple
-          &:last-child
-            margin-bottom: 10px
+          animation: appear 1s ease, steps(5, end)
+
+          @keyframes appear
+            from
+              opacity: 0
+            to
+              opacity: 1
+
+          &.complete
+            background: $bg-purple
+            &:last-child
+              margin-bottom: 10px
             p
               color: $text-color-light
             & [class^="button"]
               & img:last-child
                 opacity: 0
-          *
-            transition: .3s
-          p
-            font-size: 21px
-        div
-          display: flex
-          height: inherit
-        
-        figure
-          display: block
-          padding: 12px
-          position: relative
-          width: 50px
-          &[class^="button"]
-            img
-              left: 50%
-              position: absolute
-              top: 50%
-              transform: translate(-50%, -50%)
-              width: 25px
-              &[alt="delete"]
-                width: 20px
-          &.button-complete
-            cursor: pointer
-            &:hover
-              background: $bg-green
-              & img:last-child
-                opacity: 0
-          &.button-delete
-            cursor: pointer
-            &:hover
-              background: $bg-red
-              & img:last-child
-                opacity: 0
+            *
+              transition: .3s
+            p
+              font-size: 21px
+          div
+            display: flex
+            height: inherit
+          figure
+            display: block
+            padding: 12px
+            position: relative
+            width: 50px
+            &[class^="button"]
+              img
+                left: 50%
+                position: absolute
+                top: 50%
+                transform: translate(-50%, -50%)
+                width: 25px
+                &[alt="delete"]
+                  width: 20px
+            &.button-complete
+              cursor: pointer
+              &:hover
+                background: $bg-green
+                & img:last-child
+                  opacity: 0
+            &.button-delete
+              cursor: pointer
+              &:hover
+                background: $bg-red
+                & img:last-child
+                  opacity: 0

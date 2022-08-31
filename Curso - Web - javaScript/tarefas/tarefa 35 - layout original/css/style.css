@@ -68,61 +68,70 @@
   padding-left: 20px;
   transition: 0.6s;
   width: 480px;
+  animation: appear 1s ease, steps(5, end);
 }
-* .main .div-list-task.complete {
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+* .main .div-list-task .task.complete {
   background: #4B234F;
 }
-* .main .div-list-task.complete:last-child {
+* .main .div-list-task .task.complete:last-child {
   margin-bottom: 10px;
 }
-* .main .div-list-task.complete:last-child p {
+* .main .div-list-task .task.complete p {
   color: #fff;
 }
-* .main .div-list-task.complete:last-child [class^=button] img:last-child {
+* .main .div-list-task .task.complete [class^=button] img:last-child {
   opacity: 0;
 }
-* .main .div-list-task.complete * {
+* .main .div-list-task .task.complete * {
   transition: 0.3s;
 }
-* .main .div-list-task.complete p {
+* .main .div-list-task .task.complete p {
   font-size: 21px;
 }
-* .main .div-list-task div {
+* .main .div-list-task .task div {
   display: flex;
   height: inherit;
 }
-* .main .div-list-task figure {
+* .main .div-list-task .task figure {
   display: block;
   padding: 12px;
   position: relative;
   width: 50px;
 }
-* .main .div-list-task figure[class^=button] img {
+* .main .div-list-task .task figure[class^=button] img {
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 25px;
 }
-* .main .div-list-task figure[class^=button] img[alt=delete] {
+* .main .div-list-task .task figure[class^=button] img[alt=delete] {
   width: 20px;
 }
-* .main .div-list-task figure.button-complete {
+* .main .div-list-task .task figure.button-complete {
   cursor: pointer;
 }
-* .main .div-list-task figure.button-complete:hover {
+* .main .div-list-task .task figure.button-complete:hover {
   background: #00BF14;
 }
-* .main .div-list-task figure.button-complete:hover img:last-child {
+* .main .div-list-task .task figure.button-complete:hover img:last-child {
   opacity: 0;
 }
-* .main .div-list-task figure.button-delete {
+* .main .div-list-task .task figure.button-delete {
   cursor: pointer;
 }
-* .main .div-list-task figure.button-delete:hover {
+* .main .div-list-task .task figure.button-delete:hover {
   background: #FB1E2D;
 }
-* .main .div-list-task figure.button-delete:hover img:last-child {
+* .main .div-list-task .task figure.button-delete:hover img:last-child {
   opacity: 0;
 }
 
