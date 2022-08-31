@@ -114,6 +114,15 @@ input
         &::after
           opacity: 0
 
+  .task
+    animation: appear .3s ease, steps(5, end)
+
+    @keyframes appear
+      from
+        opacity: 0
+      to
+        opacity: 1
+
 .toodoo
   th
     background-color: $bg-yellow-weight1
