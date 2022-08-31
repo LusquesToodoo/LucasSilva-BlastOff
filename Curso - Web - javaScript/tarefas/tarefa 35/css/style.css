@@ -14,6 +14,7 @@ input {
   border: none;
   height: 100%;
   width: 100%;
+  font-size: 21px;
 }
 input:focus {
   outline: none;
@@ -21,22 +22,36 @@ input:focus {
 
 #all-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: auto;
   min-height: fit-content;
   padding: 25px;
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  #all-content {
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+  }
+}
 
 .create, .toodoo, .concluded {
-  border: 1px solid #000;
+  border-collapse: collapse;
+  border: solid 1px #000;
   max-width: 465px;
-  min-width: 300px;
+  min-width: 365px;
   width: 33.3333333333%;
+}
+@media screen and (max-width: 1200px) {
+  .create, .toodoo, .concluded {
+    width: 100%;
+  }
 }
 .create tr, .toodoo tr, .concluded tr {
   display: flex;
-  height: 50px;
+  min-height: 50px;
 }
 .create th, .toodoo th, .concluded th {
   background-color: #117CCB;
@@ -44,15 +59,25 @@ input:focus {
 }
 .create th, .create td, .toodoo th, .toodoo td, .concluded th, .concluded td {
   align-items: center;
-  border: 1px solid #000;
+  border-bottom: 1px solid #000;
   display: flex;
-  height: inherit;
+  font-size: 21px;
+  max-height: 50px;
   padding-left: 20px;
   text-align: left;
   width: 100%;
 }
+.create th > p, .create td > p, .toodoo th > p, .toodoo td > p, .concluded th > p, .concluded td > p {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .create th[class*=-button], .create td[class*=-button], .toodoo th[class*=-button], .toodoo td[class*=-button], .concluded th[class*=-button], .concluded td[class*=-button] {
   align-items: center;
+  border: solid 1px #000;
+  border-right: none;
+  border-top: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -83,29 +108,32 @@ input:focus {
 .toodoo th {
   background-color: #E2A85B;
 }
-.toodoo td[class$=-button-concluded]::before {
+.toodoo td[class*=-button-concluded]::before {
   content: url(../img/concluded-white.svg);
 }
-.toodoo td[class$=-button-concluded]::after {
+.toodoo td[class*=-button-concluded]::after {
   content: url(../img/concluded-green.svg);
 }
-.toodoo td[class$=-button-concluded]:hover {
+.toodoo td[class*=-button-concluded]:hover {
   background-color: #47C6A2;
 }
-.toodoo td[class$=-button-concluded]:hover::after {
+.toodoo td[class*=-button-concluded]:hover::after {
   opacity: 0;
 }
-.toodoo td[class$=-button-delete]::before {
+.toodoo td[class*=-button-delete]::before {
   content: url(../img/delete-white.svg);
 }
-.toodoo td[class$=-button-delete]::after {
+.toodoo td[class*=-button-delete]::after {
   content: url(../img/delete-red.svg);
 }
-.toodoo td[class$=-button-delete]:hover {
+.toodoo td[class*=-button-delete]:hover {
   background-color: #CE4530;
 }
-.toodoo td[class$=-button-delete]:hover::after {
+.toodoo td[class*=-button-delete]:hover::after {
   opacity: 0;
+}
+.toodoo .return-concluded.hidden-toodoo {
+  display: none;
 }
 
 .concluded th {
@@ -119,8 +147,8 @@ input:focus {
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  padding: 0;
   padding-right: 20px;
+  padding: 0;
   position: relative;
   width: 140px;
 }
@@ -129,13 +157,13 @@ input:focus {
   border-radius: 100px;
   color: #fff;
   display: block;
+  font-size: 16px;
+  left: 50%;
   padding: 5px 10px;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.6s;
-  z-index: 1;
 }
 .concluded .return-concluded .return-task {
   cursor: pointer;
@@ -152,12 +180,18 @@ input:focus {
   opacity: 0;
   background-color: #E2A85B;
 }
-.concluded .return-concluded:hover .return-task {
+.concluded .hidden-toodoo {
+  display: flex;
+}
+.concluded .hidden-toodoo:hover .return-task {
   width: 30px;
 }
-.concluded .return-concluded:hover p {
+.concluded .hidden-toodoo:hover p {
   opacity: 0;
   background-color: #E2A85B;
+}
+.concluded .hidden-concluded[class*=button] {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,20 +1,23 @@
+//Init variables
 $bg-blue-weight0: #0C6BB8
 $bg-blue-weight1: #117CCB
 $bg-blue-weight2: #178CDD
-
 $bg-yellow-weight0: #CE974A
 $bg-yellow-weight1: #E2A85B
 $bg-yellow-weight2: #F6BA6C
-
 $bg-green-weight0: #2FB390
 $bg-green-weight1: #47C6A2
 $bg-green-weight2: #5ED8B3
-
 $bg-red-weight0: #A52318
 $bg-red-weight1: #B93424
 $bg-red-weight2: #CE4530
-
 $border-color: #000
+//End of variables
+//Init functions
+@mixin media($width)
+  @media screen and (max-width: $width)
+    @content
+//End of functions
 
 *
   box-sizing: border-box
@@ -29,26 +32,37 @@ input
   border: none
   height: 100%
   width: 100%
+  font-size: 21px
   &:focus
     outline: none
 
 #all-content
   display: flex
+  flex-wrap: wrap
   justify-content: center
   margin: auto
   min-height: fit-content
   padding: 25px
   width: 100%
 
+  @include media(1200px)
+    align-items: center
+    gap: 15px
+    flex-direction: column
+
 .create, .toodoo, .concluded
-  border: 1px solid $border-color
+  border-collapse: collapse
+  border: solid 1px $border-color
   max-width: 465px
-  min-width: 300px
+  min-width: 365px
   width: calc( 100% / 3 )
+
+  @include media(1200px)
+    width: 100%
 
   tr
     display: flex
-    height: 50px
+    min-height: 50px
 
   th
     background-color: $bg-blue-weight1
@@ -56,15 +70,25 @@ input
 
   th, td
     align-items: center
-    border: 1px solid $border-color
+    border-bottom: 1px solid $border-color
     display: flex
-    height: inherit
+    font-size: 21px
+    max-height: 50px
     padding-left: 20px
     text-align: left
     width: 100%
 
+    > p
+      max-width: 300px
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+
     &[class*="-button"]
       align-items: center
+      border: solid 1px $border-color
+      border-right: none
+      border-top: none
       cursor: pointer
       display: flex
       justify-content: center
@@ -94,7 +118,7 @@ input
   th
     background-color: $bg-yellow-weight1
   td
-    &[class$="-button-concluded"]
+    &[class*="-button-concluded"]
       &::before
         content: url(../img/concluded-white.svg)
       &::after
@@ -104,7 +128,7 @@ input
         &::after
           opacity: 0
 
-    &[class$="-button-delete"]
+    &[class*="-button-delete"]
       &::before
         content: url(../img/delete-white.svg)
       &::after
@@ -113,6 +137,10 @@ input
         background-color: $bg-red-weight2
         &::after
           opacity: 0
+
+  .return-concluded
+    &.hidden-toodoo
+      display: none
 
 .concluded
   th
@@ -126,23 +154,23 @@ input
     cursor: pointer
     display: flex
     justify-content: flex-end
-    padding: 0
     padding-right: 20px
+    padding: 0
     position: relative
     width: 140px
 
     & p
-        background-color: $bg-green-weight2
-        border-radius: 100px
-        color: #fff
-        display: block
-        padding: 5px 10px
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        transition: .6s
-        z-index: 1
+      background-color: $bg-green-weight2
+      border-radius: 100px
+      color: #fff
+      display: block
+      font-size: 16px
+      left: 50%
+      padding: 5px 10px
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      transition: .6s
 
     .return-task
       cursor: pointer
@@ -159,6 +187,9 @@ input
           opacity: 0
           background-color: $bg-yellow-weight1
 
+  & .hidden-toodoo
+    display: flex
+
     &:hover
       .return-task
         width: 30px
@@ -167,4 +198,5 @@ input
         opacity: 0
         background-color: $bg-yellow-weight1
 
-
+  & .hidden-concluded[class*="button"]
+    display: none
