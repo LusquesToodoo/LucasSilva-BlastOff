@@ -1,0 +1,57 @@
+São Paulo, 29 agosto de 2022.
+Quinta-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Javascript
+Objetivo: Conceitos de JSON
+
+============================================================================
+Aula 54
+============================================================================
+
+JSON
+---
+- JSON = Javascript Object Notation;
+
+- Um formato de representar dados;
+
+- Mais simples que XML, que é utilzado para fins parecidos;
+
+- Utiliza o formato de chave e valor;
+
+- É leve para ser enviado por requisições;
+
+- Muito utilizado para API e também arquivos de configuraçõe;
+_______________________________________
+
+Tipos de dados aceitos no JSON:
+---
+  - String - "Olá mundo!"
+
+  - Números - 1 ou 12.54
+
+  - Arrays - [1, 2, 3]
+
+  - Objetos - {"nome": "Lucas"}
+
+  Dados nulos - null
+_______________________________________
+
+============================================================================
+Aula 55
+============================================================================
+
+Funções Asunc e Await
+---
+- As *funções assíncronas* funcionam como *Promises*, porém com uma sintaxe mais simples;
+
+- Precisamos de clarar a função com a palavra *async*;
+
+- E quando precisamos aguardar por algo a instrução precisa de await/
+
+- Podemos aplicar o recurso em *funções anônimas* e métodos de classe;
+
+- Tentar usar o await sem async *gera um erro*;
+
+- Exemplo de uso: inserção de dado no banco;
+_______________________________________

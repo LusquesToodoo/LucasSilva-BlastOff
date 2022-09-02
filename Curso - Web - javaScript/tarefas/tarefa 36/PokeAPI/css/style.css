@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dc143c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+#all-container {
+  margin: auto;
+  max-width: 1350px;
+}
+
+.header {
+  align-items: center;
+  background-color: #a70722;
+  border: solid 3px #86061b;
+  border-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 175px;
+  position: relative;
+  width: 100%;
+}
+.header-top {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 150px;
+  width: 100%;
+}
+.header-led {
+  grid-column: 2/3;
+  margin: auto;
+}
+.header-bottom {
+  bottom: 0;
+  max-height: 75px;
+  position: absolute;
+  width: calc(100% + 6px);
+}
+
+.main {
+  background-color: #a70722;
+  border: solid 3px #86061b;
+  border-top: 0;
+  height: fit-content;
+  padding: 25px 15px;
+}
+.main-display {
+  background-color: #fff;
+  border: solid 2px #a70722;
+  height: 750px;
+  position: relative;
+  width: 100%;
+}
+.main-display, .main-display-screen {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 75%);
+}
+.main-display-header {
+  margin: 8px auto;
+  width: 53px;
+}
+.main-display-screen {
+  background-color: #000;
+  height: calc(100% - 50px);
+  margin: auto;
+  overflow-y: scroll;
+  width: calc(100% - 50px);
+}
+.main-display-screen .pokemon-list {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: auto;
+  max-width: 1005px;
+  padding: 25px 0;
+  width: 100%;
+}
+.main-display-screen .pokemon-list-item {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 150px;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+  width: 325px;
+}
+.main-display-screen .pokemon-list-item::before {
+  background-image: linear-gradient(#e32636, #86061b);
+  background-color: rgba(255, 255, 255, 0.6);
+  content: "";
+  display: block;
+  height: 300%;
+  left: 37.5%;
+  position: absolute;
+  width: 25%;
+  animation: loading_spot 5s linear infinite;
+}
+@keyframes loading_spot {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main-display-screen .pokemon-list-item::after {
+  background-color: #333;
+  border-radius: 10px;
+  content: "";
+  display: block;
+  height: calc(100% - 2px);
+  left: 1px;
+  margin: auto;
+  position: absolute;
+  width: calc(100% - 2px);
+}
+.main-display-screen .pokemon-list-item .pokemon-spot {
+  align-items: center;
+  background-color: #333;
+  border: solid 1px #fff;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 100%;
+  border-radius: inherit;
+  position: relative;
+  transition: 0.3s;
+  width: 325px;
+  z-index: 2;
+}
+.main-display-screen .pokemon-list-item .pokemon-spot:hover {
+  border: solid 1px rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+.main-display-screen .pokemon-list-item .pokemon-spot:hover .pokemon-img {
+  opacity: 0.6;
+}
+.main-display-screen .pokemon-list-item .pokemon-spot:hover .pokemon-name {
+  color: rgba(170, 170, 170, 0.6666666667);
+}
+.main-display-screen .pokemon-list-item .pokemon-spot .pokemon-img {
+  width: 150px;
+  transition: 0.6s;
+}
+.main-display-screen .pokemon-list-item .pokemon-spot .pokemon-name {
+  color: #fff;
+  font-size: 28px;
+  margin-left: 15px;
+  transition: 0.6s;
+}
+.main-display::before {
+  background-color: red;
+  border-radius: 50%;
+  bottom: 13%;
+  content: "";
+  display: block;
+  filter: blur(2px);
+  height: calc(100% - 50px);
+  left: 6.8%;
+  max-height: 20px;
+  max-width: 20px;
+  position: absolute;
+  width: calc(100% - 50px);
+  z-index: 1;
+}
+.main-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 275px;
+  padding: 25px;
+  width: 100%;
+}
+.main-controls-left, .main-controls-middle, .main-controls-right {
+  border: solid 1px;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.main-controls-left .joystick {
+  background-color: #33404f;
+  border-radius: 50%;
+  border: solid 1px #000;
+  cursor: pointer;
+  display: flex;
+  height: 75px;
+  margin: 25px;
+  margin: 25px;
+  width: 75px;
+}
+.main-controls-left .joystick-shadow {
+  border-radius: 50%;
+  border-left: solid 2px #fff;
+  border-top: solid 1px #fff;
+  filter: blur(4px);
+  height: 70px;
+  margin: auto;
+  width: 70px;
+}
+.main-controls-left .joystick-shadow:active {
+  border: solid 2px #fff;
+  border-left: dashed 2px #fff;
+}
+.main-controls-middle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.main-controls-middle .middle-button {
+  display: flex;
+  justify-content: space-between;
+}
+.main-controls-middle .middle-button-left, .main-controls-middle .middle-button-right, .main-controls-middle .middle-button .shadow {
+  border-radius: 100px;
+  cursor: pointer;
+  height: 25px;
+  transition: 0.3s;
+  width: 150px;
+}
+.main-controls-middle .middle-button-left:hover, .main-controls-middle .middle-button-right:hover, .main-controls-middle .middle-button .shadow:hover {
+  filter: brightness(1.3);
+}
+.main-controls-middle .middle-button .shadow {
+  filter: blur(3px) !important;
+  height: 10px;
+  margin: 3px auto;
+  width: calc(100% - 6px);
+}
+.main-controls-middle .middle-button-left {
+  background-color: #b66668;
+}
+.main-controls-middle .middle-button-left .shadow {
+  background-color: #96585c;
+  border-top: solid 3px #d09393;
+  border-left: solid 5px #d09393;
+}
+.main-controls-middle .middle-button-right {
+  background-color: #5e93b2;
+}
+.main-controls-middle .middle-button-right .shadow {
+  background-color: #4f6c92;
+  border-left: solid 5px #d1d6cb;
+  border-top: solid 3px #d1d6cb;
+}
+.main-controls-middle .middle-textarea {
+  background-color: #93aa76;
+  background-image: url(../img/textarea.png);
+  background-position: center;
+  background-size: cover;
+  height: 110%;
+  overflow: hidden;
+  width: 100%;
+}
+.main-controls-middle .middle-textarea #pokemon-name {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  text-shadow: -0.3px -0.3px #000;
+  font-size: 38px;
+  height: calc(100% + 25px);
+  padding: 25px;
+  width: 100%;
+}
+.main-controls-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-controls-right .buttons-directional {
+  margin: 25px;
+}
+.main-controls-right .buttons-directional .row-top, .main-controls-right .buttons-directional .row-middle, .main-controls-right .buttons-directional .row-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 50px;
+  width: 150px;
+}
+.main-controls-right .buttons-directional .row-top td, .main-controls-right .buttons-directional .row-middle td, .main-controls-right .buttons-directional .row-bottom td {
+  background-color: #33404f;
+  height: 50px;
+  width: 50px;
+}
+.main-controls-right .buttons-directional .row-top td, .main-controls-right .buttons-directional .row-bottom td {
+  grid-column: 2/3;
+}
+.main-controls-right .buttons-directional .row-top .button-top, .main-controls-right .buttons-directional .row-top .button-bottom, .main-controls-right .buttons-directional .row-bottom .button-top, .main-controls-right .buttons-directional .row-bottom .button-bottom {
+  border-left: solid 3px #93A5B5;
+  filter: blur(1px);
+}
+.main-controls-right .buttons-directional .row-top .button-top, .main-controls-right .buttons-directional .row-bottom .button-top {
+  border-top: solid 3px #93A5B5;
+}
+.main-controls-right .buttons-directional .row-middle .button-left, .main-controls-right .buttons-directional .row-middle .button-right {
+  border-top: solid 3px #93A5B5;
+}
+.main-controls-right .buttons-directional .row-middle .button-middle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.main-controls-right .buttons-directional .row-middle .button-middle .shadow {
+  border-bottom: solid 2px #93a5b5;
+  border-radius: 50%;
+  border-right: solid 1px #93a5b5;
+  filter: blur(3px);
+  height: 45px;
+  width: 45px;
+}
+
+/*# sourceMappingURL=style.css.map */

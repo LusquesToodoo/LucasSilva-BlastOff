@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>PokeDex</title>
+</head>
+
+<body>
+  <section id="all-container">
+    <header class="header">
+      <div class="header-top">
+        <figure class="header-led">
+          <img src="img/header-led.svg" alt="led da pokedex">
+        </figure>
+      </div>
+      <figure class="header-bottom">
+        <img src="img/header-partition.svg" alt="">
+      </figure>
+    </header>
+    <main class="main">
+      <section class="main-display">
+        <figure class="main-display-header">
+          <img src="img/display-header.svg" alt="display header">
+        </figure>
+        <div class="main-display-screen">
+          <ul class="pokemon-list">
+            <li class="pokemon-list-item">
+              <div class="pokemon-spot">
+                <figure class="pokemon-img">
+                  <img src="img/ditto.png" alt="ditto">
+                </figure>
+                <p class="pokemon-name">Ditto</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-controls">
+        <div class="main-controls-left">
+          <div class="joystick">
+            <div class="joystick-shadow">
+            </div>
+          </div>
+        </div>
+        <div class="main-controls-middle">
+          <ul class="middle-button">
+            <li class="middle-button-left">
+              <div class="shadow"></div>
+            </li>
+            <li class="middle-button-right">
+              <div class="shadow"></div>
+            </li>
+          </ul>
+          <div class="middle-textarea">
+            <textarea name="pokemon-name" id="pokemon-name" ></textarea>
+          </div>
+        </div>
+        <div class="main-controls-right">
+          <table class="buttons-directional">
+            <tr class="row-top">
+              <td class="button-top"></td>
+            </tr>
+            <tr class="row-middle">
+              <td class="button-left"></td>
+              <td class="button-middle">
+                <div class="shadow"></div>
+              </td>
+              <td class="button-right"></td>
+            </tr>
+            <tr class="row-bottom">
+              <td class="button-bottom"></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+  </section>
+</body>
+
+</html>

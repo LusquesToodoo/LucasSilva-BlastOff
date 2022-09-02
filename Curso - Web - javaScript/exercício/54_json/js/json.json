@@ -1,0 +1,15 @@
+{
+  "nome": "Lucas",
+  "idade": 23,
+  "bonitao": true,
+  "detalhes_profissao": {
+    "profissao": "Desenvolvedor",
+    "area": "Front-ed",
+    "empresa": "Toodoo"
+  },
+  "hobbies": [
+    "Programar",
+    "Malhar",
+    "Skate"
+  ]
+}
