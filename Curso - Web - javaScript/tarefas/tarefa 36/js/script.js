@@ -86,7 +86,7 @@ class Pokemon {
 
   filterCard = () => {
     const name = searchBar.value;
-    if (this.name.indexOf(name.toLowerCase()) == -1) {
+    if (this.name.indexOf(name.toLowerCase()) != 0) {
       this.nodeElement.classList.add("none");
     } else {
       this.nodeElement.classList.remove("none");
@@ -101,7 +101,7 @@ class Pokemon {
         displayLedRight.classList.remove("active");
       } else {
         displayLedLeft.classList.remove("active");
-        displayLedRight.classList.add("active");s
+        displayLedRight.classList.add("active");
       }
     }
   };
