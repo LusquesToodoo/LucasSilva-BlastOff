@@ -84,6 +84,46 @@ img {
       position: relative;
       width: calc(100% - 50px);
 
+      & .display-loading{
+        background-color: #000;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: .6s;
+        width: 100%;
+        z-index: 50;
+        figure{
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 30px;
+
+          &::after{
+            animation: loading 3s linear infinite reverse;
+            border-bottom: dashed 3px $bg-red-light;
+            border-left: dashed 3px $bg-red;
+            border-radius: 50%;
+            border-right: dashed 3px #ccc;
+            border-top: dashed 3px $bg-red-dark;
+            content: '';
+            display: block;
+            height: 50px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+
+            @keyframes loading {
+              // 50%{transform: translate(-50%, -50%) rotate(180deg);}
+              100%{transform: translate(-50%, -50%) rotate(360deg);}
+              
+            }
+          }
+        }
+      }
+
       & .pokemon-list {
         align-items: center;
         justify-content: center;

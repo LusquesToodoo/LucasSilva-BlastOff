@@ -5,6 +5,7 @@ const btnTop = document.querySelector(".button-top");
 const displayLedLeft = document.querySelector(".middle-button-left");
 const displayLedRight = document.querySelector(".middle-button-right");
 const joystick = document.querySelector(".joystick");
+const loadingScreen = document.querySelector(".display-loading");
 const nPokemons = 152;
 const pokeballs = {};
 const pokemonList = document.querySelector(".pokemon-list");
@@ -174,3 +175,10 @@ btnRight.addEventListener("click", () => {
 btnBottom.addEventListener("click", () => {
   navigation(3);
 });
+
+setTimeout(() => {
+  loadingScreen.style.cssText = 'opacity: 0;';
+  setInterval(() => {
+    loadingScreen.style.cssText = 'display: none;';
+  }, 600);
+}, 1000);
