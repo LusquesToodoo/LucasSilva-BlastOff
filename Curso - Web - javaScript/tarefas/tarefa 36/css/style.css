@@ -58,7 +58,8 @@ img {
   position: relative;
   width: 100%;
 }
-.main-display, .main-display-screen {
+.main-display,
+.main-display-screen {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 75%);
 }
 .main-display-header {
@@ -246,7 +247,11 @@ img {
 .main-display-screen .pokemon-info-list .pokemon-info-item.active {
   left: 0;
 }
-.main-display-screen .pokemon-info-list .pokemon-info-item.active .pokemon-img img {
+.main-display-screen
+  .pokemon-info-list
+  .pokemon-info-item.active
+  .pokemon-img
+  img {
   transform: scaleX(1);
 }
 .main-display-screen .pokemon-info-list .pokemon-info-item .pokemon-img {
@@ -259,7 +264,9 @@ img {
   transform: scaleX(-1);
 }
 @keyframes movement {
-  0%, 5%, 100% {
+  0%,
+  5%,
+  100% {
     transform: scale(1);
   }
   70% {
@@ -271,31 +278,54 @@ img {
   max-height: 170px;
   width: 100%;
 }
-.main-display-screen .pokemon-info-list .pokemon-info-item .pokemon-attributes tr {
+.main-display-screen
+  .pokemon-info-list
+  .pokemon-info-item
+  .pokemon-attributes
+  tr {
   max-height: 170px;
   align-items: center;
   display: flex;
   justify-content: center;
 }
-.main-display-screen .pokemon-info-list .pokemon-info-item .pokemon-attributes figure {
+.main-display-screen
+  .pokemon-info-list
+  .pokemon-info-item
+  .pokemon-attributes
+  figure {
   width: 150px;
 }
-.main-display-screen .pokemon-info-list .pokemon-info-item .pokemon-attributes .pokemon-info-text {
+.main-display-screen
+  .pokemon-info-list
+  .pokemon-info-item
+  .pokemon-attributes
+  .pokemon-info-text {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   padding: 25px;
 }
-.main-display-screen .pokemon-info-list .pokemon-info-item .pokemon-attributes .pokemon-info-text [class^=pokemon] {
+.main-display-screen
+  .pokemon-info-list
+  .pokemon-info-item
+  .pokemon-attributes
+  .pokemon-info-text
+  [class^="pokemon"] {
   color: #fff;
   font-size: 32px;
 }
-.main-display-screen .pokemon-info-list .pokemon-info-item .pokemon-attributes .pokemon-info-text [class^=pokemon] span {
+.main-display-screen
+  .pokemon-info-list
+  .pokemon-info-item
+  .pokemon-attributes
+  .pokemon-info-text
+  [class^="pokemon"]
+  span {
   color: #e32636;
   text-shadow: -1px -1px 30px #000;
 }
 .main-display::before {
-  background-color: red;
+  background-color: #e32636;
   border-radius: 50%;
   bottom: 13%;
   content: "";
@@ -316,7 +346,9 @@ img {
   padding: 25px;
   width: 100%;
 }
-.main-controls-left, .main-controls-middle, .main-controls-right {
+.main-controls-left,
+.main-controls-middle,
+.main-controls-right {
   height: 100%;
   position: relative;
   width: 100%;
@@ -354,13 +386,17 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.main-controls-middle .middle-button-left, .main-controls-middle .middle-button-right, .main-controls-middle .middle-button .shadow {
+.main-controls-middle .middle-button-left,
+.main-controls-middle .middle-button-right,
+.main-controls-middle .middle-button .shadow {
   border-radius: 100px;
   height: 25px;
   transition: 0.3s;
   width: 150px;
 }
-.main-controls-middle .middle-button-left.active, .main-controls-middle .middle-button-right.active, .main-controls-middle .middle-button .shadow.active {
+.main-controls-middle .middle-button-left.active,
+.main-controls-middle .middle-button-right.active,
+.main-controls-middle .middle-button .shadow.active {
   filter: brightness(1.3);
   box-shadow: 0px 0px 50px #fff;
 }
@@ -411,20 +447,26 @@ img {
 .main-controls-right .buttons-directional {
   margin: 25px;
 }
-.main-controls-right .buttons-directional .row-top, .main-controls-right .buttons-directional .row-middle, .main-controls-right .buttons-directional .row-bottom {
+.main-controls-right .buttons-directional .row-top,
+.main-controls-right .buttons-directional .row-middle,
+.main-controls-right .buttons-directional .row-bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: 50px;
   width: 150px;
 }
-.main-controls-right .buttons-directional .row-top td, .main-controls-right .buttons-directional .row-middle td, .main-controls-right .buttons-directional .row-bottom td {
+.main-controls-right .buttons-directional .row-top td,
+.main-controls-right .buttons-directional .row-middle td,
+.main-controls-right .buttons-directional .row-bottom td {
   background-color: #33404f;
   cursor: pointer;
   height: 50px;
   position: relative;
   width: 50px;
 }
-.main-controls-right .buttons-directional .row-top td::after, .main-controls-right .buttons-directional .row-middle td::after, .main-controls-right .buttons-directional .row-bottom td::after {
+.main-controls-right .buttons-directional .row-top td::after,
+.main-controls-right .buttons-directional .row-middle td::after,
+.main-controls-right .buttons-directional .row-bottom td::after {
   height: 25px;
   left: 50%;
   position: absolute;
@@ -432,44 +474,72 @@ img {
   transform: translate(-50%, -50%);
   width: 25px;
 }
-.main-controls-right .buttons-directional .row-top .button-top::after, .main-controls-right .buttons-directional .row-middle .button-top::after, .main-controls-right .buttons-directional .row-bottom .button-top::after {
+.main-controls-right .buttons-directional .row-top .button-top::after,
+.main-controls-right .buttons-directional .row-middle .button-top::after,
+.main-controls-right .buttons-directional .row-bottom .button-top::after {
   content: url(../img/arrow-top.png);
 }
-.main-controls-right .buttons-directional .row-top .button-left, .main-controls-right .buttons-directional .row-middle .button-left, .main-controls-right .buttons-directional .row-bottom .button-left {
+.main-controls-right .buttons-directional .row-top .button-left,
+.main-controls-right .buttons-directional .row-middle .button-left,
+.main-controls-right .buttons-directional .row-bottom .button-left {
   overflow: hidden;
 }
-.main-controls-right .buttons-directional .row-top .button-left::after, .main-controls-right .buttons-directional .row-middle .button-left::after, .main-controls-right .buttons-directional .row-bottom .button-left::after {
+.main-controls-right .buttons-directional .row-top .button-left::after,
+.main-controls-right .buttons-directional .row-middle .button-left::after,
+.main-controls-right .buttons-directional .row-bottom .button-left::after {
   content: url(../img/arrow-left.png);
 }
-.main-controls-right .buttons-directional .row-top .button-right::after, .main-controls-right .buttons-directional .row-middle .button-right::after, .main-controls-right .buttons-directional .row-bottom .button-right::after {
+.main-controls-right .buttons-directional .row-top .button-right::after,
+.main-controls-right .buttons-directional .row-middle .button-right::after,
+.main-controls-right .buttons-directional .row-bottom .button-right::after {
   content: url(../img/arrow-right.png);
 }
-.main-controls-right .buttons-directional .row-top .button-bottom::after, .main-controls-right .buttons-directional .row-middle .button-bottom::after, .main-controls-right .buttons-directional .row-bottom .button-bottom::after {
+.main-controls-right .buttons-directional .row-top .button-bottom::after,
+.main-controls-right .buttons-directional .row-middle .button-bottom::after,
+.main-controls-right .buttons-directional .row-bottom .button-bottom::after {
   content: url(../img/arrow-bottom.png);
 }
-.main-controls-right .buttons-directional .row-top td, .main-controls-right .buttons-directional .row-bottom td {
+.main-controls-right .buttons-directional .row-top td,
+.main-controls-right .buttons-directional .row-bottom td {
   grid-column: 2/3;
   height: 52px;
   width: 52px;
 }
-.main-controls-right .buttons-directional .row-top .button-top, .main-controls-right .buttons-directional .row-top .button-bottom, .main-controls-right .buttons-directional .row-bottom .button-top, .main-controls-right .buttons-directional .row-bottom .button-bottom {
+.main-controls-right .buttons-directional .row-top .button-top,
+.main-controls-right .buttons-directional .row-top .button-bottom,
+.main-controls-right .buttons-directional .row-bottom .button-top,
+.main-controls-right .buttons-directional .row-bottom .button-bottom {
   border-left: solid 3px #93a5b5;
   filter: blur(1px);
 }
-.main-controls-right .buttons-directional .row-top .button-top, .main-controls-right .buttons-directional .row-bottom .button-top {
+.main-controls-right .buttons-directional .row-top .button-top,
+.main-controls-right .buttons-directional .row-bottom .button-top {
   border-top: solid 3px #93a5b5;
 }
 .main-controls-right .buttons-directional .row-top:active td {
   border-top: solid 0px #93a5b5;
   border-left: solid 0px #93a5b5;
 }
-.main-controls-right .buttons-directional .row-top:active ~ .row-middle td:first-child {
+.main-controls-right
+  .buttons-directional
+  .row-top:active
+  ~ .row-middle
+  td:first-child {
   border-top: solid 0px #93a5b5;
 }
-.main-controls-right .buttons-directional .row-top:active ~ .row-middle td:nth-child(2) .shadow {
+.main-controls-right
+  .buttons-directional
+  .row-top:active
+  ~ .row-middle
+  td:nth-child(2)
+  .shadow {
   border-bottom: solid 5px #93a5b5;
 }
-.main-controls-right .buttons-directional .row-top:active ~ .row-middle td:last-child {
+.main-controls-right
+  .buttons-directional
+  .row-top:active
+  ~ .row-middle
+  td:last-child {
   border-bottom: solid 3px #93a5b5;
   border-right: solid 3px #93a5b5;
   border-top: solid 0px #93a5b5;
@@ -481,16 +551,26 @@ img {
 .main-controls-right .buttons-directional .row-middle {
   margin-bottom: -1px;
 }
-.main-controls-right .buttons-directional .row-middle .button-left, .main-controls-right .buttons-directional .row-middle .button-right {
+.main-controls-right .buttons-directional .row-middle .button-left,
+.main-controls-right .buttons-directional .row-middle .button-right {
   border-top: solid 3px #93a5b5;
 }
 .main-controls-right .buttons-directional .row-middle .button-left:active {
   border-top: solid 0px #93a5b5;
 }
-.main-controls-right .buttons-directional .row-middle .button-left:active + td .shadow {
+.main-controls-right
+  .buttons-directional
+  .row-middle
+  .button-left:active
+  + td
+  .shadow {
   border-right: solid 5px #93a5b5;
 }
-.main-controls-right .buttons-directional .row-middle .button-left:active ~ .button-right {
+.main-controls-right
+  .buttons-directional
+  .row-middle
+  .button-left:active
+  ~ .button-right {
   border-top: solid 2px #93a5b5;
   border-right: solid 3px #93a5b5;
 }

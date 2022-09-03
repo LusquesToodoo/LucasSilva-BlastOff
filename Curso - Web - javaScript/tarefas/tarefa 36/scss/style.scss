@@ -339,7 +339,7 @@ img {
     }
 
     &::before {
-      background-color: red; // limao
+      background-color: $bg-red-light;
       border-radius: 50%;
       bottom: 13%;
       content: "";
