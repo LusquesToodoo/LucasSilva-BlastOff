@@ -1,0 +1,14 @@
+{
+  "name": "tarefa-38.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "https://github.com/Lusques",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.54.8"
+  }
+}
