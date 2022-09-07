@@ -1,0 +1,23 @@
+São Paulo, 29 agosto de 2022.
+terça-feira
+
+Nome: Lucas Carlos da Silva
+Curso: Javascript
+Objetivo: Conceitos de Javascript
+
+============================================================================
+Aula 59
+============================================================================
+
+Fetch
+---
+- Um meio nativo de *realizar requisições a APIs* com Javascript.
+
+- Podemos utilizar com *Promise ou async/await*;
+
+- Se a requisição for *GET* é preciso passar apenas a URL do recurso que estamos resgatando da API;
+
+* Caso seja outro verbo, podemos configurar a requisição com: *methos, body e headers*;
+
+- O fetch é muito utilizadfo com frameworks/libs como: React, Vue e Angular;
+_______________________________________

@@ -1,0 +1,3 @@
+sass --style compressed -> Faz com que o SASS retorne o código css já no seu formato minificado.
+
+node-sass --watch scss/style.scss css/style.css -> transpila o código da pasta scss para a css.

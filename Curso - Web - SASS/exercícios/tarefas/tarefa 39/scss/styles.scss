@@ -1,0 +1,54 @@
+$gray: #666;
+$blue: #273460;
+$white: #fff;
+
+header {
+  background: green;
+  height: 100px;
+  font-size: 50pt;
+  line-height: 100px;
+  text-align: center;
+  color: $white;
+  margin-bottom: 50px;
+}
+
+table {
+  border: solid 1px $gray;
+  width: 600px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th {
+  border: solid 1px $gray;
+  background: $blue;
+  color: $white;
+  font-size: 18pt;
+  height: 60px;
+}
+
+td {
+  border: solid 1px $gray;
+  padding-left: 5px;
+  height: 40px;
+}
+
+.esquerda {
+  background: #c7cfed;
+  text-align: center;
+  font-size: 16pt;
+  padding: 0px;
+}
+
+.direita {
+  background: #e5eaf9;
+  text-align: center;
+  padding: 0px;
+}
+
+#rodape {
+  background: $blue;
+  color: $white;
+  text-align: center;
+  height: 30px;
+}
