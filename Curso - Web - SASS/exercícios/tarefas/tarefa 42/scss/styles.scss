@@ -1,0 +1,45 @@
+$attribute-list: border-radius, border, padding;
+$button-bg-color: #0c1073 !default;
+$button-border-color: #ea005a !default;
+$size-1-px: 1 !default;
+$size-5-px: 5 !default;
+
+@mixin px-for-em($attribute, $size-px, $unity){
+  @if $attribute == border{
+    #{$attribute}: solid calc($size-1-px / 16) + $unity $button-border-color;
+  }
+  @else if $attribute == padding {
+    #{$attribute}: calc($size-5-px / 16) + $unity calc($size-5-px * 2 / 16) + $unity;
+  } @else {
+    #{$attribute}: calc($size-px / 16) + $unity;
+  }
+}
+
+%button {
+  background-color: $button-bg-color;
+  @each $attribute in $attribute-list {
+    @include px-for-em($attribute, 25, rem)
+  }
+}
+
+.btn-follow {
+  @extend %button;
+}
+
+// ---
+// $button-bg-color: #0c1073;
+// $button-border-color: #ea005a;
+// $teste: (background-color: $button-bg-color);
+// @mixin px-for-rem($attribute, $size) {
+//   #{$attribute}: $size + rem;
+// }
+
+// .button{
+//   @include px-for-rem(font-size, 10)
+// }
+
+// No estilo da Tarefa 41, mude todos os font-size do estilo de pixel para rem, para isso faça uma operação para conversão de pixel para rem e depois faça uma interpolação da operação com a unidade rem.
+
+// Lembre-se: 1rem = 16pixels
+
+
