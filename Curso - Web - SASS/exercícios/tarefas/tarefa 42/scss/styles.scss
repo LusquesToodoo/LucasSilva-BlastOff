@@ -25,21 +25,3 @@ $size-5-px: 5 !default;
 .btn-follow {
   @extend %button;
 }
-
-// ---
-// $button-bg-color: #0c1073;
-// $button-border-color: #ea005a;
-// $teste: (background-color: $button-bg-color);
-// @mixin px-for-rem($attribute, $size) {
-//   #{$attribute}: $size + rem;
-// }
-
-// .button{
-//   @include px-for-rem(font-size, 10)
-// }
-
-// No estilo da Tarefa 41, mude todos os font-size do estilo de pixel para rem, para isso faça uma operação para conversão de pixel para rem e depois faça uma interpolação da operação com a unidade rem.
-
-// Lembre-se: 1rem = 16pixels
-
-
