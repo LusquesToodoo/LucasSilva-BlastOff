@@ -1,0 +1,66 @@
+$gray: #666;
+$blue: #273460;
+$white: #fff;
+
+$size-0: 0;
+$size-100px: 100px;
+$size-16pt: 16pt;
+$size-1px: 1px;
+$size-30px: 30px;
+$size-40px: 40px;
+$size-50pt: 50pt;
+$size-50px: 50px;
+$size-5px: 5px;
+$size-600px: 600px;
+$size-80pt: 80pt;
+
+header {
+  background: green;
+  color: $white;
+  font-size: $size-50pt;
+  height: $size-100px;
+  line-height: $size-100px;
+  margin-bottom: $size-50px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: solid $size-1px $gray;
+  margin: auto;
+  width: $size-600px;
+}
+
+th {
+  background: $blue;
+  border: solid $size-1px $gray;
+  color: $white;
+  font-size: $size-80pt;
+  height: calc($size-600px / 10);
+}
+
+td {
+  border: solid $size-1px $gray;
+  height: $size-40px;
+  padding-left: $size-5px;
+}
+
+.esquerda {
+  background: #c7cfed;
+  text-align: center;
+  font-size: $size-16pt;
+  padding: $size-0;
+}
+
+.direita {
+  background: #e5eaf9;
+  text-align: center;
+  padding: $size-0;
+}
+
+#rodape {
+  background: $blue;
+  color: $white;
+  text-align: center;
+  height: $size-30px;
+}
