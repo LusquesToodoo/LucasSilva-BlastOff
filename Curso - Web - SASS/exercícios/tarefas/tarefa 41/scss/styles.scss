@@ -1,0 +1,13 @@
+$button-bg-color: #0c1073;
+$button-border-color: #ea005a;
+
+%button {
+  background-color: $button-bg-color;
+  border-radius: 5px;
+  border: solid 1px $button-border-color;
+  padding: 5px 10px;
+}
+
+.btn-follow {
+  @extend %button;
+}
