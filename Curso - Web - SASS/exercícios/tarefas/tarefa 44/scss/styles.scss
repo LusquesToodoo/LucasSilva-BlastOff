@@ -1,0 +1,17 @@
+$button-bg-color: #0c1073 !default;
+$button-border-color: #ea005a !default;
+
+@function px-for-rem($value-px) {
+  @return #{calc($value-px / 16) + rem};
+}
+
+@mixin button($bdr-r, $bdr, $pdg) {
+  border-radius: px-for-rem($bdr-r);
+  border: solid px-for-rem($bdr) $button-border-color;
+  padding: px-for-rem($pdg) calc(px-for-rem($pdg) * 2);
+}
+
+.btn-follow {
+  background-color: $button-bg-color;
+  @include button(5, 1, 5);
+}
