@@ -1,0 +1,13 @@
+$button-bg-color: #0c1073 !default;
+$button-border-color: #ea005a !default;
+
+@mixin button($bdr-r, $bdr, $pdg) {
+  border-radius: #{$bdr-r + px};
+  border: solid #{$bdr + px} $button-border-color;
+  padding: #{$bdr-r + px} #{$bdr-r * 2 + px};
+}
+
+.btn-follow {
+  background-color: $button-bg-color;
+  @include button(5, 1, 5);
+}

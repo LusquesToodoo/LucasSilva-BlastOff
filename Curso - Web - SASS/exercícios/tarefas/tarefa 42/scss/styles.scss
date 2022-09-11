@@ -4,21 +4,20 @@ $button-border-color: #ea005a !default;
 $size-1-px: 1 !default;
 $size-5-px: 5 !default;
 
-@mixin px-for-em($attribute, $size-px, $unity){
-  @if $attribute == border{
+@mixin px-for-em($attribute, $unity) {
+  @if $attribute == border {
     #{$attribute}: solid calc($size-1-px / 16) + $unity $button-border-color;
-  }
-  @else if $attribute == padding {
+  } @else if $attribute == padding {
     #{$attribute}: calc($size-5-px / 16) + $unity calc($size-5-px * 2 / 16) + $unity;
   } @else {
-    #{$attribute}: calc($size-px / 16) + $unity;
+    #{$attribute}: calc($size-5-px / 16) + $unity;
   }
 }
 
 %button {
   background-color: $button-bg-color;
   @each $attribute in $attribute-list {
-    @include px-for-em($attribute, 25, rem)
+    @include px-for-em($attribute, rem);
   }
 }
 
