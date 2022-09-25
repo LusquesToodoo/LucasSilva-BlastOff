@@ -28,12 +28,15 @@
   font-family: "Inter", sans-serif;
 }
 
-.container-loading {
+.loading {
+  transition: 0.6s;
+}
+.loading .container-loading {
   min-height: calc(100vh - 6rem);
   padding-top: 121px;
   transition: 0.6s;
 }
-.container-loading .progress-loading {
+.loading .container-loading .progress-loading {
   height: 30px;
 }
 

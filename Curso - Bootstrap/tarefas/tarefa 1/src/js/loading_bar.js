@@ -1,12 +1,16 @@
 let progress = 0;
 const progressBar = document.querySelector(".progress-loading > .progress-bar");
 const containerLoading = document.querySelector(".container-loading");
+const loading = document.querySelector(".loading");
 
 function loader() {
   setTimeout(() => {
     progress += 5;
     if (progress > 100) {
-      containerLoading.style.opacity = "0";
+      loading.style.opacity = "0";
+      setTimeout(() => {
+        loading.style.display = "none";
+      }, 600);
       return;
     }
     progressBar.innerText = `${progress}%`;
