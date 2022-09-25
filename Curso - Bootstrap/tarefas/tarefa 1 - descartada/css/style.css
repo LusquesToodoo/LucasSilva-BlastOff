@@ -1,0 +1,22 @@
+img {
+  width: 100%;
+}
+
+.bg-purple {
+  background-color: #838fff;
+}
+
+.bg-grey-05 {
+  background-color: rgba(215, 215, 215, 0.537254902);
+}
+
+.loading-container {
+  height: calc(100vh - 96px);
+}
+
+.progress {
+  height: 30px;
+  margin-top: 136px;
+}
+
+/*# sourceMappingURL=style.css.map */

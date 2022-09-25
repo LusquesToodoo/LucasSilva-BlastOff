@@ -1,0 +1,8 @@
+.header {
+  & .header-logo {
+    max-width: 238px;
+    & img {
+      width: 100%;
+    }
+  }
+}

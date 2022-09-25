@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$bg-blue: #587bf8;
+$bg-green: #04a914;
+$bg-grey-05: #d7d7d778;
+$bg-grey: #d2d2d2;
+$bg-purple: #838fff;
+$bg-white: #fefefe;
+$text-color: #000;
+
+.bg-blue {
+  background-color: $bg-blue;
+}
+.bg-green {
+  background-color: $bg-green;
+}
+.bg-grey-05 {
+  background-color: $bg-grey-05;
+}
+.bg-grey {
+  background-color: $bg-grey;
+}
+.bg-purple {
+  background-color: $bg-purple;
+}

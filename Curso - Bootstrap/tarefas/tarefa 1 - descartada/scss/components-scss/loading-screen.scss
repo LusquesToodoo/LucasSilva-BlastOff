@@ -1,0 +1,16 @@
+img{
+  width: 100%;
+}
+.bg-purple {
+  background-color: $purple;
+}
+.bg-grey-05 {
+  background-color: $grey;
+}
+.loading-container{
+  height: calc(100vh - 48px * 2);
+}
+.progress{
+  height: 30px;
+  margin-top: 136px;
+}

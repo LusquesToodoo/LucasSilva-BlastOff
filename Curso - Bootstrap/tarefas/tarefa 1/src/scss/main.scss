@@ -1,0 +1,15 @@
+.main {
+  & .title {
+    color: $text-color;
+    font-size: 55px;
+    font-weight: 400;
+  }
+
+  & .spot {
+    & .spot-info {
+      & p {
+        max-width: 551px;
+      }
+    }
+  }
+}
