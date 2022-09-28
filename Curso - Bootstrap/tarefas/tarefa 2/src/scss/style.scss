@@ -1,0 +1,14 @@
+@import "variables.scss";
+body {
+  font-family: "Inter", sans-serif;
+}
+.spot{
+  max-width: 375px;
+  & > h3{
+    font-size: 24px;
+    // margin: 13px 0 25px;
+  }
+  & > p{
+    font-size: 15px;
+  }
+}
