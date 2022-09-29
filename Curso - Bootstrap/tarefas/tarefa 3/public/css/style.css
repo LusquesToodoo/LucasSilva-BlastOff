@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.bg-blue-dark {
+  background-color: #171627;
+}
+
+.bg-footer {
+  background-color: #3A434B;
+}
+
+.bg-header {
+  background-color: rgba(15, 15, 15, 0.968627451);
+}
+
+.carousel-img {
+  display: flex;
+  justify-content: center;
+  max-height: 560px;
+}
+
+/*# sourceMappingURL=style.css.map */

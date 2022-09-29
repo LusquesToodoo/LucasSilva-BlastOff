@@ -1,0 +1,19 @@
+@import "variables.scss";
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.bg-blue-dark {
+  background-color: $bg-blue-dark;
+}
+.bg-footer {
+  background-color: $bg-footer;
+}
+.bg-header {
+  background-color: $bg-header;
+}
+.carousel-img {
+  display: flex;
+  justify-content: center;
+  max-height: 560px;
+}
