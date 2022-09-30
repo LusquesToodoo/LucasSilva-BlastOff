@@ -30,13 +30,13 @@
   background-color: rgba(168, 168, 168, 0.97);
 }
 
-body {
-  font-family: "inter", sans-serif;
+.fs-14px {
+  font-size: 14px;
+  letter-spacing: 0.025em;
 }
 
-.header input[type=search],
-.header button {
-  font-size: 14px;
+body {
+  font-family: "inter", sans-serif;
 }
 
 .main {
@@ -79,11 +79,6 @@ body {
 .main .card .card-body .card-title {
   font-size: 12px;
   padding: 9px 0 10px;
-}
-
-.footer p {
-  font-size: 14px;
-  letter-spacing: 0.025em;
 }
 
 /*# sourceMappingURL=style.css.map */
