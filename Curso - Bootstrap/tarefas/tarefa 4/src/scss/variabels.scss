@@ -1,0 +1,38 @@
+// Import's
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Variables
+$bg-blue: #0146f9;
+$bg-footer: rgba(58, 67, 75, 0.8);
+$bg-grey-light: #d9d9d9;
+$bg-header: rgba(168, 168, 168, 0.97);
+
+// Placeholder's
+%appear {
+  animation: appear 0.5s 1 both;
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+// Class
+.bg-blue {
+  background-color: $bg-blue;
+}
+.bg-footer {
+  background-color: $bg-footer;
+}
+.bg-grey-ligh {
+  background-color: $bg-grey-light;
+  &:focus {
+    background-color: $bg-grey-light;
+  }
+}
+.bg-header {
+  background-color: $bg-header;
+}

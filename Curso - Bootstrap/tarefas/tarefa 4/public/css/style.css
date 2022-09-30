@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.main .video-list .video-list-item {
+  animation: appear 0.5s 1 both;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bg-blue {
+  background-color: #0146f9;
+}
+
+.bg-footer {
+  background-color: rgba(58, 67, 75, 0.8);
+}
+
+.bg-grey-ligh {
+  background-color: #d9d9d9;
+}
+.bg-grey-ligh:focus {
+  background-color: #d9d9d9;
+}
+
+.bg-header {
+  background-color: rgba(168, 168, 168, 0.97);
+}
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+.header input[type=search],
+.header button {
+  font-size: 14px;
+}
+
+.main {
+  max-width: 1325px;
+  min-height: 80vh;
+}
+.main .video-list {
+  column-gap: 48px;
+  flex-wrap: wrap;
+  row-gap: 66px;
+}
+.main .video-list .video-list-item {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+}
+.main .video-list .video-list-item > a::before {
+  background-color: transparent;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  min-height: 185px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.main .card {
+  max-width: 295px;
+  overflow: hidden;
+}
+.main .card .card-image {
+  height: 150px;
+}
+.main .card .card-body {
+  height: fit-content;
+}
+.main .card .card-body .card-title {
+  font-size: 12px;
+  padding: 9px 0 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  letter-spacing: 0.025em;
+}
+
+/*# sourceMappingURL=style.css.map */
