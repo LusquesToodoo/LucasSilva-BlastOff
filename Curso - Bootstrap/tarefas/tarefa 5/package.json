@@ -1,0 +1,12 @@
+{
+  "name": "tarefa-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w src/scss/style.scss:public/css/style.css"
+  },
+  "author": "https://github.com/Lusques",
+  "license": "MIT"
+}

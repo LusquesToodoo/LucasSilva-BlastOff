@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap | Tarefa 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body class="bg-purple-blue">
+  <section class="all-container container-fluid p-0">
+    <header class="d-flex justify-content-center bg-grey">
+      <a href="https://toodoo.com.br/academy-pt/" target="__blank">
+        <figure class="py-2 m-0">
+          <img src="public/img/blastoff-logo.png" alt="blastoff">
+        </figure>
+      </a>
+    </header>
+
+    <main class="main d-flex align-items-center container my-2">
+      <div class="m-auto">
+        <form action="" class="main-form bg-grey mb-5">
+          <div class="main-form-row">
+            <label class="w-100">
+              <input type="text" class="w-100" placeholder="Nome Completo" required>
+            </label>
+          </div>
+          <div class="main-form-row flex-lg-nowrap">
+            <label class="w-100">
+              <input type="text" class="w-100" placeholder="Rua" required>
+            </label>
+            <label class="w-100">
+              <input type="text" class="w-100" placeholder="Bairro" required>
+            </label>
+          </div>
+          <div class="main-form-row flex-lg-nowrap">
+            <label class="w-100">
+              <input type="text" class="w-100" placeholder="Senha" required>
+            </label>
+            <label class="w-100 date">
+              <input type="date" class="w-100" placeholder="dd/mm/aaaa" required>
+            </label>
+          </div>
+          <div class="main-form-row justify-content-center mt-4">
+            <label class="py-1 px-4 bg-purple rounded-pill overflow-hidden">
+              <input id="liveAlertBtn" type="submit" value="Cadastrar" class="bg-purple m-auto d-block py-2 px-5 required border-0">
+            </label>
+          </div>
+        </form>
+        <div id="liveAlertPlaceholder"></div>
+      </div>
+    </main>
+
+    <footer class="bg-grey-dark px-4">
+      <div class="d-flex align-items-center justify-content-between px-2">
+        <a href="https://toodoo.com.br/" target="__blank">
+          <figure class="m-0 py-4">
+            <img src="public/img/toodoo-logo.png" alt="Toodoo">
+          </figure>
+        </a>
+        <p class="text-light fs-14px m-0">Copyright © 2022 TooDoo Desenvolvimento de Software LTDA.</p>
+      </div>
+    </footer>
+
+  </section>
+  
+  <script src="public/js/scripts.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>

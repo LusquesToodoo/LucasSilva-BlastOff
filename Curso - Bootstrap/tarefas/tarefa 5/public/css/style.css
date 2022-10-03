@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "inter", sans-serif;
+}
+
+.bg-purple-blue {
+  background-color: #6470de;
+}
+
+.bg-grey-dark {
+  background-color: #42464a;
+}
+
+.bg-grey {
+  background-color: #bbbbbb;
+}
+
+.bg-purple {
+  background-color: #9086ff;
+}
+
+.fs-14px {
+  font-size: 14px;
+  letter-spacing: 0.025em;
+}
+
+.main {
+  min-height: calc(100vh - 140px);
+}
+.main .main-form {
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1017px;
+  padding: 27px 62px 26px 56px;
+  width: 100%;
+}
+.main .main-form .main-form-row {
+  column-gap: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 38px;
+}
+.main .main-form .main-form-row.flex-lg-nowrap {
+  margin-top: 38px;
+}
+.main .main-form .main-form-row .date {
+  position: relative;
+}
+.main .main-form .main-form-row .date::after {
+  content: url("/public/img/calendar.png");
+  display: block;
+  height: 21px;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+}
+.main .main-form .main-form-row input {
+  border-radius: 10px;
+  border: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  padding: 18px 35px;
+}
+.main .main-form .main-form-row input[type=submit] {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.025em;
+}
+.main .main-form .main-form-row input::placeholder {
+  opacity: 1;
+}
+.main .main-form .main-form-row input:focus {
+  outline: none;
+}
+.main .main-form-alert {
+  padding: 32px 42px 25px;
+  background: #b7ffa5;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 22px;
+}
+.main .main-form-alert .btn-close {
+  padding: 32px 42px 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
